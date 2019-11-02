@@ -1,0 +1,302 @@
+{
+  "accomodation_countries": {
+    "titles": {
+      "main": "Apartments for rent: Rooms and Student Accommodation - Uniplaces",
+      "cities": "The world we are in.",
+      "discover_book": "Discover it. Book it.",
+      "capital": "Capital city",
+      "currency": "Currency",
+      "calling_code": "Calling code"
+    },
+    "alt": {
+      "student_accommodation": "Student accommodation in"
+    },
+    "countries": {
+      "meta_description": "Looking for apartments for rent in %country%? Homes for rent, rooms and student housing in %country%! Book your student accommodation with Uniplaces.",
+      "meta_title": "Apartments for rent in %country%: Student Accommodation - Uniplaces",
+      "uk": {
+        "heading": "United Kingdom Accommodation",
+        "name": "United Kingdom",
+        "description": "Attracted by the great universities and the promise of future prospects, people from all over the world come to study in the UK. Halls of residence, student societies and sports clubs are at the centre of the British student way of life. These help every student meet other people with similar interests, and a pint or two later, they’ll be your new best friends.",
+        "extended_description": "<p>Living in the UK is an experience thousands of people dream of. Students have an opportunity to discover themselves here, in a culture of freedom and independence. Britain’s history and tradition, along with its pub culture, are unique. Together, they create an unforgettable experience at all levels.</p> <p>Universities in the UK are different. Here, they teach you to think critically for yourself. Instead of preparing you in a memory-based, heavily theoretical way, universities open your eyes, they develop your thinking skills and so you acquire and create your own knowledge.</p> <p>One of the most exciting aspects of studying in the UK is its melting pot of worldwide communities. The diversity of the people you study with allows you to see the world from different perspectives. As British universities are at the forefront of academic research, and you have all the ingredients to soar above your highest expectations - while having the time of your life.</p> <p>We’ve recently started offering student accommodation in these cities in the UK:  <a href=\"%londonUrl%\">%london%</a>, <a href=\"%manchesterUrl%\">%manchester%</a>, <a href=\"%nottinghamUrl%\">%nottingham%</a>, <a href=\"%leedsUrl%\" title=\"%leeds%\">%leeds%</a>, <a href=\"%cardiffUrl%\" title=\"%cardiff%\">%cardiff%</a>, <a href=\"%sheffieldUrl%\" title=\"%sheffield%\">%sheffield%</a>. </p>\n",
+        "cities": {
+          "first_description": "All the cities in the United Kingdom are unique.",
+          "second_description": "is a city where there is always something going on for those who like living fast. Friendly and cheap,",
+          "third_description": "is one of England’s largest student cities.",
+          "fourth_description": "might have the best live-music scene and food of the whole country.",
+          "fifth_description": "is a small town for party animals - with one of the country’s coolest campuses, too.",
+          "sixth_description": "We also have great student accommodation for students in the UK in <a href=\"%cardiffUrl%\">%cardiff%</a>  and <a href=\"%sheffieldUrl%\">%sheffield%</a>.",
+          "london": {
+            "name": "London",
+            "description": "<p>London is a city where you will never run out of things to do. The capital of England is well known for its famous, iconic landmarks such as the Big Ben, St. Paul’s cathedral, amongst thousands and thousands more. Then there’s the British cultural heritage, best displayed by its impressive architecture and the huge museums.</p> <p>However, we know that students also care a lot about a city’s nightlife and atmosphere. This city never sleeps! Pubs, bars, clubs, warehouse afterparties, you name it: London has it all.</p> <p>When it comes to finding a <a href=\"%londonUrl%\" title=\"%london%\">place to live in %london%</a>, you know you can count on Uniplaces to help you!</p>\n"
+          },
+          "leeds": {
+            "name": "Leeds",
+            "description": "<p>Located in the middle of Great Britain, Leeds is one of the fastest growing cities in the country. Not too small but not too big either, the perfect size to make you feel right at home. It has a lot going on for students, from events and parties to music festivals, and of course plenty of bars and discos for the exciting (even if sometimes rainy) night outs. If you want to master your english, do your Erasmus or even master’s degree, make sure to check out what Leeds has to offer.</p><p>Its position will make travelling around the UK very easy so if you’re one of those spontaneous people that take night trains to cross the country and spends some hours in another city, Leeds is the perfect homebase to do so. </p><p>Need a room to rent? Maybe an studio or an apartment to share? Check out the offers on Uniplaces, where you can filter your needs, requirements and many more options.</p>\n"
+          },
+          "manchester": {
+            "name": "Manchester",
+            "description": "<p>The city of Manchester is northern England’s cultural hub. Going from the Curry Mile in Rusholme, to one of Britain’s biggest Chinatowns, Manchester is all about diversity.</p> <p>Students can also make the most of this city’s huge sports culture, featuring the National Cycling Club and the largest martial arts club in the nation. To top it off, Manchester has two of the Premier League’s biggest clubs: Manchester United and Manchester City.</p> <p>If you’re looking for a <a href=\"%manchesterUrl%\" title=\"%manchester%\">place to stay in %manchester%</a>, then don’t hesitate: Uniplaces is here to help you!</p>\n"
+          },
+          "nottingham": {
+            "name": "Nottingham",
+            "description": "<p>Studying in Nottingham is great for thousands of reasons. The city is made famous by the heroic outlaw Robin Hood, but that’s not all it’s known for. Nottingham is a vibrant city with a great student atmosphere, which often hosts several international artists at its venues.</p> <p>The coolest thing about <a href=\"%nottinghamUrl%\" title=\"%nottingham%\">%nottingham%</a> is how great the nightlife is. Most of the spots are close to each other, and you’ll always find students enjoying the great music over a few drinks. Of course it also helps that you can enjoy this place to study for just a fraction of the living costs of London!</p>\n"
+          },
+          "cardiff": {
+            "name": "Cardiff",
+            "description": "<p>The capital and commercial centre of Wales, but also one of the most important cities in the UK. The waterfront shows a modern vibe and is home to the Welch Senate, the Assembly and the Millennium Centre. While the centre still keeps the ancient era alive, with touristics sighs like the Cardiff Castle.</p><p>Hometown of Roald Dahl and currently the film set of Doctor Who; it is also one of the newest capital cities in Europe and has an incredible nightlife, as well as a great music and sport scene. If you like rugby, Cardiff is definitely the place for you. The city offers plenty of programmes and universities, which makes for a great Erasmus destination.</p><p>As a student, you are probably looking for a place near the university or/and the city centre, Uniplaces is here to help you. Head over to the website and browse and filter as much as you want so that you can find the perfect room to rent or apartment to share while your stay in the city.</p>\n"
+          },
+          "leicester": {
+            "name": "Leicester"
+          },
+          "sheffield": {
+            "name": "Sheffield",
+            "description": "<p>A city that has left behind the steel industry and has opened the doors to urban renewal. This change has made Sheffield become a very popular for national and international students.</p><p>Home of the oldest football club in the world, Sheffield FC, and also one of the greenest cities in the Europe. The typical british architecture, the big university campuses and the pubs of Sheffield will welcome you with arms wide open and you’ll be soon cutting the word the off of your vocabulary and using while as until, like a true local.</p><p>But before becoming a true local, you will need a place to live. Uniplaces has offers for all requirements. Rooms to rent, apartments to share and even studios. Make sure to head over to the website to check out the offers. You can rent from your sofa at home and when you get to Sheffield for your Erasmus  you will already have your accomodation booked and confirmed.</p>\n"
+          }
+        }
+      },
+      "portugal": {
+        "heading": "Portugal Accommodation",
+        "name": "Portugal",
+        "description": "Portugal is an easygoing country. People here always find time for things like surfing, dinners with friends, a cup of coffee and long conversations. If you study in Portugal, make the most of the great coastline and the warm weather. The country is cheap, cheerful, and lots of fun. The parties go on until sunrise, sometimes beyond that.",
+        "extended_description": "<p>Portugal is becoming a favourite destination for Erasmus students all over Europe. It’s the little things that make this country so great: the friendly people, good food, cheap beer, great weather, and amazing beaches always just around the corner. It’s the perfect country to enjoy these pleasures.</p> <p>Come and enjoy the warm nights and buzzing bars at the street parties of Bairro Alto (Lisbon) and Galerias de Paris (Porto), where thousands of students hang out. Spend your weekends at the beach - on or off a surfboard - or exploring all the towns, villages and the miles of coast. Along the way, the friends you make here will be as close as family to you for the rest of your life.</p> <p>We have student accommodation in these Portuguese cities:  <a href=\"%lisbonUrl%\">%lisbon%</a>, <a href=\"%portoUrl%\">%porto%</a>, <a href=\"%coimbraUrl%\">%coimbra%</a> and <a href=\"%bragaUrl%\">%braga%</a>.</p>\n",
+        "cities": {
+          "first_description": "is a beautiful city that loves a street party more than anything else.",
+          "second_description": "is one of the world’s most traditional student cities, where many students still wear a uniform.",
+          "third_description": "is a small city, but it’s vibrant and exciting.",
+          "fourth_description": ", a city where history, culture and tradition live side by side with technology and academic life, has the youngest population in the country.",
+          "lisbon": {
+            "name": "Lisbon",
+            "description": "<p>Lisbon is a laid back city that likes to eat, drink and dance.</p> <p>It has all the culture and events of a European capital, but it’s a city you can enjoy at a much slower pace. Make the most of the awesome weather at the beaches, chilling at riverside cafés or sunbathing in the city’s gardens.</p> <p>From enjoying a few beers in the streets, to crazy Erasmus events in bars and clubs, there are parties to go to every night.</p> <p>If you’re looking for <a href=\"%lisbonUrl%\" title=\"%lisbon%\">a student apartment in %lisbon%</a>, Uniplaces has thousands of rooms to rent for you to choose from!</p>\n"
+          },
+          "porto": {
+            "name": "Porto",
+            "description": "<p>Porto is a city with character. Studying in Porto is all about living and loving that work-hard, party-hard spirit. From the welcoming weeks (so-called Praxe) to celebrating graduation at the Queima das Fitas, student traditions embrace this.</p> <p>Eat the best sandwich in the world - the Francesinha - try the famous local Port wine, and enjoy the student spots such as Ribeira and Piolho with your friends, or just meeting new people.</p> <p>If you’re going to study here, we have <a href=\"%portoUrl%\" title=\"%porto%\">apartments in %porto%</a> for erasmus and other international students.</p>\n"
+          },
+          "coimbra": {
+            "name": "Coimbra",
+            "description": "<p>Coimbra is Portugal’s main student town. This is a city and university with a long history and old traditions that are still very much alive. The ancient student uniform, for example, with a special suit and a long black cloak is still worn by most local students with pride. The University of Coimbra is one of the oldest universities in the world, after all.</p> <p>If you are coming to study at university here, make sure to first look at all the <a href=\"%coimbraUrl%\" title=\"%coimbra%\">student accommodation in %coimbra%</a> we have.</p>\n"
+          },
+          "braga": {
+            "name": "Braga",
+            "description": "<p><a href=\"%bragaUrl%\" title=\"%braga%\">%braga%</a>, a city where history, culture and tradition live side by side with technology and academic life, has the youngest population in the country.</p>\n"
+          }
+        }
+      },
+      "spain": {
+        "heading": "Spain Accommodation",
+        "name": "Spain",
+        "description": "Spain is a country for those who want to make the most out of every moment: to eat well, to drink often, to dance a lot. The tapas and sangria are the stuff of legends, the restaurants buzz, and all the locals love to party.",
+        "extended_description": "<p>Studying in Spain can be an adventure you’ll never forget. The Spanish culture, with a regional twist across the different provinces, has every ingredient for a memorable stay. Every day has the potential to be an epic one, fuelled by the tapas and sangria served at the local restaurants and bars.There’s nothing quite like studying just a few minutes away from a Mediterranean beach, knowing that after class you can go and dip your feet in the sea to cool down.</p> <p>By living in Spain, students will also be learning the second most spoken language in the world, opening several doors for their future. Culturally, the country has so much to give. Hosting people from every corner of the globe, and especially Latin America, students can see the world through the eyes of others, and learn from each other.</p> <p>In Spain, there is a city tailored for every kind of student: hipster, party animal, sun-loving, or just purely academic.</p> <p>We have student accommodation in these Spanish cities:  <a href=\"%madridUrl%\">%madrid%</a>, <a href=\"%barcelonaUrl%\">%barcelona%</a>, <a href=\"%valenciaUrl%\">%valencia%</a>, <a href=\"%granadaUrl%\" title=\"%granada%\">%granada%</a>, <a href=\"%sevilleUrl%\" title=\"%seville%\">%seville%</a>, <a href=\"%salamancaUrl%\" title=\"%salamanca%\">%salamanca%</a>, <a href=\"%malagaUrl%\" title=\"%malaga%\">%malaga%</a>, <a href=\"%alicanteUrl%\" title=\"%alicante%\">%alicante%</a>, <a href=\"%zaragozaUrl%\" title=\"%zaragoza%\">%zaragoza%</a>, <a href=\"%cordobaUrl%\" title=\"%cordoba%\">%cordoba%</a>, <a href=\"%murciaUrl%\" title=\"%murcia%\">%murcia%</a>, <a href=\"%palmaMallorcaUrl%\" title=\"%palmaMallorca%\">%palmaMallorca%</a>, <a href=\"%cadizUrl%\" title=\"%cadiz%\">%cadiz%</a> and <a href=\"%bilbaoUrl%\" title=\"%bilbao%\">%bilbao%</a>. </p>\n",
+        "cities": {
+          "first_description": "With its great food, rich culture, and nonstop nightlife,",
+          "second_description": "has real character.",
+          "third_description": "is young and bohemian, artistic and wild. Some cities are beautifully historic, like",
+          "fourth_description": "and",
+          "fifth_description": "The Mediterranean cities of",
+          "sixth_description": "and",
+          "seventh_description": "have awesome beaches and unforgettable parties.",
+          "last_description": "We also have accommodation for students in  <a href=\"%zaragozaUrl%\">%zaragoza%</a>, <a href=\"%cordobaUrl%\">%cordoba%</a>, <a href=\"%murciaUrl%\">%murcia%</a>, <a href=\"%cadizUrl%\">%cadiz%</a> and <a href=\"%bilbaoUrl%\">%bilbao%</a>.\n",
+          "madrid": {
+            "name": "Madrid",
+            "description": "<p>Living in Madrid is an incredible experience. Madrid is the best place in the country to savour all that Spanish cuisine has to offer, as well so many other local traditions. Here, you will always have something new to do, as Madrid is one of Europe’s most vibrant cities.</p> <p>Madrid is home to one of the world’s most famous museums – the Museo del Prado. However, there are plenty more landmarks and museums to see. Whenever you want to party, the city will be ready for it! Studying in Madrid can’t be done without experiencing the tapas the city is known for. Head over to Malasaña or the party barrios near La Latina to experience just how the Madrileño students enjoy their tapas and cañas.</p> <p>Book your  <a href=\"%madridUrl%\" title=\"%madrid%\">accommodation in %madrid%</a> before moving to the city! Uniplaces is here to help!</p>\n"
+          },
+          "barcelona": {
+            "name": "Barcelona",
+            "description": "<p>Coming to study in Barcelona is life-changing. The capital of the Catalan region is home to Spain’s two best-ranked universities, and is one of the world’s most exciting cities. Here, you’ll find everything from great architecture, performing arts, and cultural centres, to economic hubs leading the way towards the future.</p> <p>Studying in Barcelona is more than just that – it’s an adventure. The friends you make, the great weather you’ll enjoy, all contribute to this city’s charm.</p> <p>Finding <a href=\"%barcelonaUrl%\" title=\"%barcelona%\">accommodation for students in %barcelona%</a> is very easy and affordable, especially when you’ve got Uniplaces to help you book safely!</p>\n"
+          },
+          "valencia": {
+            "name": "Valencia",
+            "description": "<p>You have to go to Valencia if you love the sea! This typically Mediterranean, coastal city is perfect for international students. The city combines local tradition with modernism really well.</p> <p>Studying in Valencia, you’ll be next to some of the Europe’s finest beaches, with great weather almost year-around. Make sure you make the most of this exotic city’s healthy fish-based cuisine!</p>, <p>Looking for <a href=\"%valenciaUrl%\" title=\"%valencia%\">accommodation in %valencia%</a>? Let us help you find the perfect place for you!</p>\n"
+          },
+          "granada": {
+            "name": "Granada",
+            "description": "<p>A city that will surprise you positively and it’s quickly becoming popular amongst university students because of the affordable prices. The perfect place to go if you’re looking for a more laid back city that offers a great party atmosphere and never ending night outs. With an architecture that will have you wowing and flamenco clubs that will make you want to put your dancing shoes on, Granada might be what you’re looking for.</p><p>Uniplaces has the ideal room or apartment for students to make your stay in Granada feel like home (or even better!)\n"
+          },
+          "seville": {
+            "name": "Seville",
+            "description": "<p>Seville is the perfect city for those looking for a year round warm weather. It has the culture, the history and the funniest people you’ll cross paths with. From enjoying drinks and tapas on the streets, to Erasmus parties and student events. This is the place to go if you’re a very social person.</p> <p>Want to see and experience Sevillanas, maybe even try to dance a bit? Have a chance to dress up and go out like a true Sevillano? Then make sure to stay until and throughout La Feria de Abril, which takes place after another iconic celebration, Easter (Semana Santa). You’ll get the chance to feel the history and the culture of the south of Spain more alive than ever. </p> <p>We all love to go out, but at the same time, we need a place to live. Browse in the Uniplaces web to find your ideal student room or apartment  while your Erasmus stay in Seville. </p>\n"
+          },
+          "salamanca": {
+            "name": "Salamanca",
+            "description": "<p>Salamanca will take you back in time because of its magical sights and architecture. Home to one of the oldest universities in the world, Universidad de Salamanca, it is the main reason why students make the 20% of the population of this spanish city, which is around 228k.</p> <p>Apart from a great destination to complete your studies or do your master’s degree, if you’re looking to learn spanish, there is not better place than Salamanca. The Salamantinos (people from Salamanca) have the purest spanish accent, so make sure to head out for tapas and cañas (beer) like a true spaniard, and soon enough you’ll be fluent in the language.</p> <p>When looking for student accommodation in Salamanca, you can browse on Uniplaces where you will find rooms and apartments for rent.</p>\n"
+          },
+          "malaga": {
+            "name": "Malaga",
+            "description": "<p>Hometown of one of Spain’s and the world’s most famous artists, Picasso, it's not a surprise that part of the charm of Málaga relies on his heritage and his particular artistic style. A great student city because it’s not too big and not too small; perfect for a long night out, tasty tapas and excellent seafood. If you’re a person that needs the sea to live, Málaga is the perfect Erasmus destination. Early morning surfing before class or late night runs by the sea, picnics on the weekends and the perfect southern weather will make you want to stay in Málaga forever.</p><p>If you’re looking for a student apartment to rent or maybe a room in a shared house, head over to Uniplaces, where you can easily browse and filter depending on what you’re looking for.</p>\n"
+          },
+          "alicante": {
+            "name": "Alicante",
+            "description": "<p>One of the most influenced by tourism spanish cities, but don’t let that stop you. It’s a dynamic, summer-ly vibes all year-round city that will welcome you with open arms. Alicante, or Alacant in valenciano, is a not too big city that will make you feel right at home. The good weather and vibrant nightlife make it the perfect Erasmus destination. Can’t live without the sea? We have good news!</p><p>Even if the mediterranean coast doesn’t offer waves, the beaches of Alicante are perfect for an evening volleyball game or a stroll along the seashore after class. When in the city, make sure to try as many rice dishes as possible, from paella to arroz a banda (rice with fish) and arroz negro (rice blackened by squid ink).</p><p>Now that you’ve read about the fun you can have in Alicante, comes the moment to look for a place to live. If you’re looking for a room to rent, a shared apartment or even a studio, make sure to check Uniplaces to find the ideal place for your stay abroad.</p>\n"
+          },
+          "cordoba": {
+            "name": "Córdoba",
+            "description": "<p>A city so important for the Roman empire and later on a big Islamic center. The Mosque and the Roman bridge build over the river Guadalquivir are proof of it.</p><p>Perfect city to get lost and explore, not too big and not too small, which makes it a perfect Erasmus destination, great to meet people and master your spanish. It’s not surprising that fiesta is a real thing, starting Thursday night for university students and throughout the weekend. But even more than that, if you’re a curious person, Córdoba’s strategic position will make it easier to go anywhere in Spain, and also Europe.</p><p> If your looking for a student room or apartment in Cordoba, makes sure to check out Uniplaces, where you’ll be able to find the ideal accomodation to make your Erasmus experience even better. </p>\n"
+          },
+          "murcia": {
+            "name": "Murcia",
+            "description": "<p>One of the sunniest cities in the country and even if it doesn’t have sea, it’s close enough to the mediterranean coast. It’s a laid-back capital of province which makes it a great Erasmus destination. The good weather makes a great night out companion and the weekends out of the city much more enjoyable. After exams season, make sure to get your friends together and visit the Pink Lagoon.</p><p> Murcia’s location makes it easy to travel around Spain. It’s close to another university city, Valencia, and a tourists favourite, Cartagena.</p><p>If you’re looking for accommodation, you’ve come to the right place.On our website you’ll find the ideal place for your. A studio, room to rent in a shared apartment and even entire flats. Head over to the website and start browsing. </p>\n"
+          },
+          "bilbao": {
+            "name": "Bilbao",
+            "description": "<p>Capital of one of the regions of Spain, the Basque Country, Bilbao (Bilbo in basque) is a city that screams art and culture. Famously known for being home to one of there Guggenheim museums, amongst other architectonic pieces like the Zubizuri, a bridge so cool that you’ll always find a excuse to cross it.</p><p>Different from other spanish regions, Bilbao is surrounded by green hills and offers a colder weather. But don’t let that stop you! It’s the ideal student destination for far more than the nightlife. The atlantic coast serves good waves and even though Bilbao does not have beach, you can reach the sea easily from the city center.</p><p> Need more reasons to choose Bilbao for your Erasmus destination? At Uniplaces.com you can search for a student room or apartment to rent in the city.</p>\n"
+          },
+          "palma_de_mallorca": {
+            "name": "Palma de Mallorca",
+            "description": "<p>Even if Mallorca is an island, it has and offers a great variety of option for local and international students. Palma de Mallorca, normally just called Palma, is the capital of the island and the biggest city of the Balearic islands.</p><p>From a Gothic Cathedral and narrow streets that will take you back to the medieval times, to bohemian neighbourhoods and amazing restaurants and pubs. Palma has a bit of everything and generally a good mediterranean weather, which makes it a great Erasmus destination and a very student friendly city. If you need the sea to live, this is your city! If you’re a party person, you for sure know about Ibiza. Good news is, the european capital of party is just 2 hours away by ferry, but even better news, Palma is an amazing place to party as well! Another important thing to have in mind is food. Make sure to try all the traditional things, specially pan con sobrasada, frit de matances and llonguet (typical bread from the city).</p><p>If you’re looking for a room to rent, a studio or a shared apartment, make sure to check Uniplaces You’ll be able to filter and choose between a lot of options.</p>\n"
+          },
+          "zaragoza": {
+            "name": "Zaragoza",
+            "description": "<p>A city, that even being the fifth biggest in Spain, has managed to stay in the shadows. Hometown of one the most recognized spanish painters, Francisco Goya, Zaragoza also has a bit to showcase of the Arabic era, but we should really highlight the Basílica del Pilar and the Ebro river, both symbols of the city.</p><p>Even if big, it’s a great destinations for Erasmus and international students. Universidad de Zaragoza is one of the best universities in Spain and one of the main reasons why the city has a young atmosphere yearound. It’s also great that is just a three hour train away from both, Madrid and Barcelona. Make sure to be in town for Fiestas del Pilar (October 12th), it’s the biggest event in the city. Big parades, flower offerings, concerts and, of course, food and drinks.</p><p>If you’re looking for accommodation in Zaragoza, make sure to check our website. You can look around on a map and filter according you your needs and requirements. If you’re looking for a room to rent, an apartment to share or even an studio, Uniplaces is the place to do so.</p>\n"
+          },
+          "cadiz": {
+            "name": "Cadiz",
+            "description": "<p>Sun, never ending beaches and the funniest people. An strategic point of the Iberian peninsula, which has been home to different nations throughout its history. At the moment it hosts one of the most important ports in southern Europe and it’s the door to the mediterranean.</p><p>The good weather and the sea make Cadiz a very attractive city for Erasmus students. In the last few years, the popularity of the city has increased and it has become one of the reference university cities in Spain. The gaditanos, people of Cadiz, will make you feel right at home from day one and will soon invite you out for tapas and night outs. The city has spectacular beaches and tasty seafood, but apart from that it also has one of the biggest Carnivals in Europe. Make sure to be in the city for the event and you’ll get to experience it first hand. Fancy dresses and never ending street parties that go on for eleven days. Sounds fun!</p><p>If you’re looking for accomodation in Cadiz, make sure to check out the places on our website. You will be able to filter and browse through different kind of places: room in a shared apartment, studios and even flats to share, if you’re going to the city with friends.</p>\n"
+          }
+        }
+      },
+      "france": {
+        "heading": "France Accommodation",
+        "name": "France",
+        "description": "France is a country for artists, romantics, and foodies. Of course, it has incredible wine, cheese, croissants and baguettes! But it’s so much more than that because of the way so many cultures meet: in France you can enjoy music and food from all over the world.",
+        "extended_description": "<p>France is a country well known for its philosophical thinkers and forward-thinking ideas. Students from across the globe come to study in France because of its rich culture, academic traditions, and fabulous cuisine. France is also one of Europe’s most diverse countries, where several different environments can be found within the same city.</p> <p>Here, there’s a city for every kind of student. Paris is amazing for the arts lovers and museumgoers, along with its cosmopolitan student community; Toulouse is full of students who love the alternative scene; and Lyon is the culinary capital of France – so if you’re a foodie, you can’t go wrong with Lyon!</p> <p>After a semester living in France, you will feel like you’ve been living in a typical French movie, and moving back home will feel odd. Not to worry, though, “We’ll always have <a href=\"%parisUrl%\">%paris%</a>”.</p>\n",
+        "cities": {
+          "first_description": "Besides all the other great cities and small towns, if you come to study in France, consider studying in <a href=\"%parisUrl%\">%paris%</a>. \nIt’s possibly the most beautiful city in the world. Studying here is a privilege - make the most of it! Or maybe even <a href=\"%lilleUrl%\">%lille%</a>,\nnamed the coolest city in France thanks to its young population of over 100,00 students!\n",
+          "paris": {
+            "name": "Paris",
+            "description": "<p>The river, the museums, the cuisine, the Eiffel Tower - studying in Paris is an unforgettable adventure. Not to mention all the croissants, baguettes and pains au chocolat you can have to cure your hangover after a French wine-fuelled night out along the Seine.</p> <p>In Paris, students get a chance to enrich themselves culturally like nowhere else in the world. Every first Sunday of the month, most state-run museums are free for students. However, you’ll have to practice your French while you’re here, as the Parisians much prefer you to address them in their native language.</p> <p>You can be sure of one thing: after your semester in Paris, you will have fallen in love with the city of love!</p> <p>Need help finding your  <a href=\"%parisUrl%\" title=\"%paris%\">student accommodation in %paris%</a>? Uniplaces is here for you!</p>\n"
+          },
+          "lille": {
+            "name": "Lille"
+          }
+        }
+      },
+      "italy": {
+        "heading": "Italy Accommodation",
+        "name": "Italy",
+        "description": "Studying in Italy is probably the best opportunity you’ll ever have to explore a country where every city is fascinating. Get ready, though. Nobody escapes that awesome “pasta, pizza and birra” diet without gaining a few pounds!",
+        "extended_description": "<p>Studying in Italy is an adventure that you’ll enjoy every second and every day. All of the cities in Italy are beautiful, amazing and fun. So the one where you are studying will be great: but so will all the ones you’ll be visiting and partying in.</p> <p>You will always eat well: even in the smallest restaurant of your neighbourhood, or in your university’s food hall. It’s not just pizzas and pasta of course, but even if it was: the pizzas and the pasta here are so great, you wouldn’t get tired of it.</p> <p>Italy is one of the favourite countries for international students: so you’ll always find a strong community here of friends to party with, explore your city or go travelling across the country. Life in Italy is awesome:  <a href=\"%romeUrl%\" title=\"%rome%\">%rome%</a>,  <a href=\"%bolognaUrl%\" title=\"%bologna%\">%bologna%</a>, <a href=\"%milanUrl%\" title=\"%milan%\">%milan%</a>, <a href=\"%florenceUrl%\" title=\"%florence%\">%florence%</a> and <a href=\"%turinUrl%\" title=\"%turin%\">%turin%</a>. </p> <p>Come study here and find out for yourself.</p>\n",
+        "cities": {
+          "first_description": "The University of Bologna is considered the oldest university of the world, but the atmosphere here is far from being classical. The heart of",
+          "second_description": "is lively, fun-loving and revolutionary.",
+          "last_description": "We also have student accommodation in  <a href=\"%romeUrl%\">%rome%</a>,  <a href=\"%milanUrl%\">%milan%</a>,  <a href=\"%florenceUrl%\">%florence%</a>,  <a href=\"%turinUrl%\">%turin%</a>.\n",
+          "bologna": {
+            "name": "Bologna",
+            "description": "<p>Cities this beautiful are usually crowded with tourists, but Bologna is a city 100% for students. This means it has some of the cheapest, coolest bars, parties and restaurants in the country. You’ll love studying in <a href=\"%bolognaUrl%\" title=\"%bologna%\">%bologna%</a>, a historical city with a radical student spirit.</p>\n"
+          },
+          "rome": {
+            "name": "Rome",
+            "description": "<p>Rome is a crazy and quirky city where you’ll never, ever find yourself bored. This city has it all for adventuring spirits: unique neighbourhoods to be discovered, ruins to explore, gardens and museums to visit.</p> <p>Studying in Rome, you’ll see a completely different side of the city to the one tourists see. Instead of queueing for hours to see the Colosseum, or the Fontana di Trevi, you’ll go there with your friends at night. Drinking and talking for hours under these spots, you know are memories you’ll never forget.</p> <p>If you need <a href=\"%romeUrl%\" title=\"%rome%\">student rooms in %rome%</a>, we have plenty: one could be just for you.</p>\n"
+          },
+          "milan": {
+            "name": "Milan",
+            "description": "<p>Ranked as one of the most beautiful cities in the world by Forbes, Florence is the epitome of what you can think about when you think about Italy: Cradle of the Renaissance, birthplace of Italian language and dwell of artistic masterpiece of Michelangelo and Brunelleschi.</p><p>Visit the Uffizi Museum, having a glass of wine with your new friend while eating a schiacciata alla fiorentina and enjoy a crazy luxury shopping in luxury while studying at one of the oldest and famous universities of the world.</p><p>If Batman’s butler Alfred chosen Florence as his retirement place to drink Fernet liquor at the bank of river Arno, why you wouldn’t? Rent a room it over at Uniplaces.com and find your accomodation for your perfect Erasmus stay.</p>\n"
+          },
+          "padua": {
+            "name": "Padua"
+          },
+          "florence": {
+            "name": "Florence",
+            "description": "<p>Ranked as one of the most beautiful cities in the world by Forbes, Florence is the epitome of what you can think about when you think about Italy: Cradle of the Renaissance, birthplace of Italian language and dwell of artistic masterpiece of Michelangelo and Brunelleschi.</p><p>Visit the Uffizi Museum, having a glass of wine with your new friend while eating a schiacciata alla fiorentina and enjoy a crazy luxury shopping in luxury while studying at one of the oldest and famous universities of the world.</p><p>If Batman’s butler Alfred chosen Florence as his retirement place to drink Fernet liquor at the bank of river Arno, why you wouldn’t? Rent a room it over at Uniplaces.com and find your accomodation for your perfect Erasmus stay.</p>\n"
+          },
+          "turin": {
+            "name": "Turin",
+            "description": "<p>At the shadows of the Alps mountain the elegant Turin fits the perfect size city a university student will ever wanted from an Italian city. From its Baroque architecture to the its famous Egyptian museum, from the iconic Gianduiotto chocolate to its huge stadiums, Turin is the perfect place to enjoy your study life whether you’re an art lover, a foodie, or a football fan.</p><p>Want to become a engineer? Check out the famous Politecnico of the city and after studying dig the locals and the pubs of the city at nightime.</p><p>Still don’t know where to find a place for you? Uniplaces.com can help an Erasmus student like you to find among thousand of room or apartments to rent for your stay there.</p>\n"
+          }
+        }
+      },
+      "germany": {
+        "heading": "Germany Accommodation",
+        "name": "Germany",
+        "description": "Studying in Germany will open several doors for your future, regardless of whether you're here for just a semester or a whole year. It's easy to have a great life while studying in Germany. Most universities have abolished tuition fees, so you'll have more money to spend on the already great lifestyle provided by this beautiful country. Practically everyone speaks English, so you'll have no trouble meeting new people at university or exploring the country's vibrant nightlife!",
+        "extended_description": "<p>Studying in Germany is a great opportunity to learn in one of Europe’s leading industrial countries. Students get the chance to attend classes in English, German or even French – perfect for learning a new language! You might just be coming for a semester in Germany, but doing so will open several doors for your future career. The best thing about studying in Germany is that tuition fees for a greater part of its 400+ universities have mostly been abolished!</p> <p>Living in Germany couldn’t be any easier. Most people speak English, and the quality of life is very high, even on a student budget! Public transport is extremely efficient, and the country’s rich cultural history provides an endless variety of things to do.</p> <p>And then there’s the beer… Germans know how to party. Nightlife in Germany has a mixture of everything: from underground electronic music clubs to hipster cocktail bars, and most of them are open till dawn.</p> <p>We have student accommodation in these German cities:  <a href=\"%berlinUrl%\">%berlin%</a> , <a href=\"%munichUrl%\">%munich%</a> , <a href=\"%leipzig%\">%leipzig%</a> and <a href=\"%frankfurt%\">%frankfurt%</a>.</p>\n",
+        "cities": {
+          "description": "Studying in <a href=\"%berlinUrl%\">%berlin%</a> \nis one of the most eye-opening experiences out there. With its hipster culture and after-parties that go on for days: <a href=\"%berlinUrl%\">%berlin%</a> \nis the best city to explore just who you are. Studying in rich <a href=\"%munichUrl%\">%munich%</a> \nis completely different: it's pure old world culture in the Bavarian capital. <a href=\"%leipzigUrl%\" title=\"%leipzig%\">%leipzig%</a> is the most populous city in the German federal state of Saxony,  <a href=\"%frankfurtUrl%\" title=\"%frankfurt%\">%frankfurt%</a> is Germany’s financial heart.\n",
+          "berlin": {
+            "name": "Berlin",
+            "description": "<p>Studying in Berlin is a truly international experience. Students from all over the world concentrate in the German capital and form an incredible, multi-cultural environment. At the same time, the city is also the best place to immerse yourself in German culture, and its local diversity.</p> <p>Berlin is a lively, vivid city that is constantly evolving with new trends. Berlin is also a great city for young entrepreneurs. After all, it is Europe’s startup capital! Here, students can participate and contribute in several ambitious projects at the same time as they study.</p> <p>If you’re coming to study in <a href=\"%berlinUrl%\" title=\"%berlin%\">%berlin%</a>, you know you can count on Uniplaces to help you find your student accommodation.</p>\n"
+          },
+          "munich": {
+            "name": "Munich",
+            "description": "<p>Munich is a city that prides itself on its traditions. The capital of Bavaria has a huge amount of international students, who come here with high expectations, and never leave disappointed. Munich’s universities are amongst Europe’s finest, and the city has an infinite amount of things to explore – especially music and theatre venues.</p> <p>Like in most of Germany, Munich’s nightlife is vibrant. The international community blends well with the locals, making it easy for new friendships to be born on any night out. House parties are also a very common event here in Munich. Get packing and come study in Munich!</p> <p>Finding accommodation for students in <a href=\"%munichUrl%\" title=\"%munich%\">accommodation for students in %munich%</a> couldn’t be easier, as you’ve got Uniplaces to help you find the perfect place for yourself!</p>\n"
+          },
+          "cologne": {
+            "name": "Cologne",
+            "description": "<p> <a href=\"%cologneUrl%\" title=\"%cologne%\">%cologne%</a>  is home to the biggest university in Germany, so it’s no surprise that the student vibe is all around, which will help to meet people in campus but also at nighttime.\" </p>\n"
+          },
+          "leipzig": {
+            "name": "Leipzig",
+            "description": "<p> <a href=\"%leipzigUrl%\" title=\"%leipzig%\">%leipzig%</a>  is the most populous city in the German federal state of Saxony. It is Germany's eight most populous city as well as the second most populous city in the area of former East Germany after (East) Berlin. Leipzig today is an economic centre, the most livable city in Germany.  </p>\n"
+          },
+          "frankfurt": {
+            "name": "Frankfurt",
+            "description": "<p> <a href=\"%frankfurtUrl%\" title=\"%frankfurt%\">%frankfurt%</a>  Welcome to Frankfurt: Germany’s financial heart, and a city uniquely shaped by skyscrapers, 20th-century buildings and all kinds of historic landmarks: from famed cathedrals to railway stations and opera houses. Thanks to its multicultural atmosphere, museums, music venues and job opportunities, Frankfurt charms expats from all around the globe. Making a move to Frankfurt is on the books for you? Uniplaces is the fastest and easiest way to find a place to live in. There are affordable apartments, rooms for rent, studios and student housing that you can book online from wherever you are. And it doesn’t matter if you’re going to work, study or spend a semester abroad as a Digital Nomad: it’s guaranteed that we have the right place for you. </p>\n"
+          }
+        }
+      }
+    },
+    "labels": {
+      "more_about": {
+        "uk": "More about United Kingdom",
+        "pt": "More about Portugal",
+        "es": "More about Spain",
+        "nl": "More about The Netherlands",
+        "it": "More about Italy",
+        "fr": "More about France",
+        "de": "More about Germany",
+        "pl": "More about Poland",
+        "as": "More about Austria"
+      },
+      "back_countries": "Back to all countries",
+      "title": "Hello",
+      "accommodation": "Accommodation"
+    },
+    "breadcrumbs": {
+      "title": "You are at:",
+      "home": {
+        "name": "Home"
+      }
+    },
+    "city_name": {
+      "london": "Accommodation in London",
+      "manchester": "Accommodation in Manchester",
+      "leeds": "Accommodation in Leeds",
+      "nottingham": "Accommodation in Nottingham",
+      "cardiff": "Accommodation in Cardiff",
+      "leicester": "Accommodation in Leicester",
+      "sheffield": "Accommodation in Sheffield",
+      "lisbon": "Accommodation in Lisbon",
+      "porto": "Accommodation in Porto",
+      "coimbra": "Accommodation in Coimbra",
+      "braga": "Accommodation in Braga",
+      "madrid": "Accommodation in Madrid",
+      "barcelona": "Accommodation in Barcelona",
+      "valencia": "Accommodation in Valencia",
+      "granada": "Accommodation in Granada",
+      "seville": "Accommodation in Sevilla",
+      "salamanca": "Accommodation in Salamanca",
+      "malaga": "Accommodation in Málaga",
+      "alicante": "Accommodation in Alicante",
+      "palma-mallorca": "Accommodation in Palma de Mallorca",
+      "zaragoza": "Accommodation in Zaragoza",
+      "cadiz": "Accommodation in Cadiz",
+      "amsterdam": "Accommodation in Amsterdam",
+      "rotterdam": "Accommodation in Rotterdam",
+      "the-hague": "Accommodation in The Hague",
+      "utrecht": "Accommodation in Utrecht",
+      "groningen": "Accommodation in Groningen",
+      "bologna": "Accommodation in Bologna",
+      "rome": "Accommodation in Rome",
+      "milan": "Accommodation in Milan",
+      "florence": "Accommodation in Florence",
+      "turin": "Accommodation in Turin",
+      "paris": "Accommodation in Paris",
+      "lille": "Accommodation in Lille",
+      "berlin": "Accommodation in Berlin",
+      "munich": "Accommodation in Munich",
+      "warsaw": "Accommodation in Warsaw",
+      "vienna": "Accommodation in Vienna",
+      "frankfurt": "Accommodation in Frankfurt"
+    }
+  }
+}
