@@ -4,9 +4,17 @@ import { useStaticQuery, graphql } from "gatsby"
 const AccommodationCountries = () => {
   const data = useStaticQuery(graphql`
     query AccommodationCountriesQuery {
-      site {
-        siteMetadata {
-          title
+      allDataJson {
+        edges {
+          node {
+            accommodation_countries {
+              countries {
+                uk {
+                  name
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -45,7 +53,7 @@ const AccommodationCountries = () => {
         <div class="country full-border-bottom">
           <h1 class="country__title">
             <span>Hello</span>
-            United Kingdom
+            {data.allDataJson.edges[0].node.accommodation_countries.countries.uk.name}
           </h1>
           {children}
         </div>
