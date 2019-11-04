@@ -1,4 +1,5 @@
 ---
+countryCode: "uk"
 name: "United Kingdom"
 imageUrl: "https://cdn-static-new.uniplaces.com/spa/cities/united-kingdom/united-kingdom-medium.jpg"
 capitalName: "London"

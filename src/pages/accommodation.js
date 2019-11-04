@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
 import './accommodation.scss'
 
 const IndexPage = ({ data }) => {
+  console.log(data);
   const createTable = () => {
     let table = [];
     const { allMarkdownRemark: { edges } } = data;
@@ -14,6 +16,7 @@ const IndexPage = ({ data }) => {
         node: {
           html,
           frontmatter: {
+            countryCode,
             name,
             imageUrl,
             capitalName,
@@ -23,6 +26,8 @@ const IndexPage = ({ data }) => {
           }
         }
       } = edge;
+      const flagImage = data[`${countryCode}Flag`];
+      const { childImageSharp: { fluid } } = flagImage;
 
       table.push(
         <div className="country full-border-bottom">
@@ -49,7 +54,7 @@ const IndexPage = ({ data }) => {
                   </div>
                 </div>
                 <div className="country__intro__info__attributes__right-block">
-                  <p> <image></image> </p>
+                  <Img fluid={fluid} />
                 </div>
               </div>
               <div className="country__intro__info__description">
@@ -93,13 +98,14 @@ const IndexPage = ({ data }) => {
 }
 
 export const query = graphql`
-  {
+  query {
     allMarkdownRemark {
       edges {
         node {
           id
           html
           frontmatter {
+            countryCode
             name
             imageUrl
             capitalName
@@ -107,6 +113,48 @@ export const query = graphql`
             currencyCode
             callingCode
           }
+        }
+      }
+    },
+    deFlag: file(relativePath: { eq: "flags/de.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 20) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    esFlag: file(relativePath: { eq: "flags/es.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 20) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    frFlag: file(relativePath: { eq: "flags/fr.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 20) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    gbFlag: file(relativePath: { eq: "flags/gb.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 20) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    itFlag: file(relativePath: { eq: "flags/it.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 20) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    ptFlag: file(relativePath: { eq: "flags/pt.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 20) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
