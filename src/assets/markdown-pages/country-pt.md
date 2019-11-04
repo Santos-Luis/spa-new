@@ -2,7 +2,8 @@
 name: "Portugal"
 imageUrl: "https://cdn-static.staging-uniplaces.com/spa/cities/portugal/portugal-medium.jpg"
 capitalName: "Lisbon"
-currency: "€ (EUR)"
+currencySymbol: "€"
+currencyCode: "EUR"
 callingCode: "+351"
 ---
 

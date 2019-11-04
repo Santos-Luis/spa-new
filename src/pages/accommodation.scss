@@ -52,9 +52,86 @@
     position: relative;
     color: #888;
     margin-bottom: 100px;
+    font-family: IntervalNextBookit,sans-serif;
 }
 
 .country {
+    margin-bottom: 100px;
+
+    &__title {
+        margin-bottom: 37px;
+        color: #005A7E;
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: normal;
+
+        span {
+            font-family: IntervalNextBookit,sans-serif;
+            font-style: italic
+        }
+    }
+
+    &__intro {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        &__image {
+            height: 320px;
+            width: 48%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+            font-size: 0.85em;
+
+            &__attributes{ 
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                &__left-block {
+                    display: flex;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    span {
+                        color: #A7A7AB;
+                        font-size: .8rem;
+                    }
+
+                    &__key {
+                        margin-right: 30px;
+                        color: #A7A7AB;
+                    }
+
+                    &__value {
+                        color: #667485;
+                    }
+                }
+
+                &__right-block {
+                    
+                }
+            }
+
+            &__description{
+                color: #575757;
+            }
+        }
+    }
+}
+
+/**.country {
     &__title {
         margin-bottom: 37px;
         color: #005A7E;
@@ -91,4 +168,4 @@
             }
         }
     }
-}
+}**/

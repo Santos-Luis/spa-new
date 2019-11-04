@@ -17,7 +17,8 @@ const IndexPage = ({ data }) => {
             name,
             imageUrl,
             capitalName,
-            currency,
+            currencySymbol,
+            currencyCode,
             callingCode
           }
         }
@@ -29,26 +30,34 @@ const IndexPage = ({ data }) => {
             <span>Hello </span>
             {name}
           </h1>
-          <div className="country__row--intro">
-            <div className="row__block">
+          <div className="country__intro">
+            <div className="country__intro__image">
               <img src={imageUrl} className="medium-width" />
             </div>
-            <div className="row__block row__block--info">
-              <div className="left-block">
-                <span>Capital city </span>
-                <span>Currency </span>
-                <span>Calling code </span>
+            <div className="country__intro__info">
+              <div className="country__intro__info__attributes">
+                <div className="country__intro__info__attributes__left-block">
+                  <div className="country__intro__info__attributes__left-block__key">
+                    <p>Capital city </p>
+                    <p>Currency </p>
+                    <p>Calling code </p>
+                  </div>
+                  <div className="country__intro__info__attributes__left-block__value">
+                    <p>{capitalName}</p>
+                    <p>{currencySymbol} <span>({currencyCode})</span></p>
+                    <p>{callingCode}</p>
+                  </div>
+                </div>
+                <div className="country__intro__info__attributes__right-block">
+                  <p> <image></image> </p>
+                </div>
               </div>
-              <div className="right-block">
-                <span>{capitalName}</span>
-                <span data-after="(GBP)">{currency}</span>
-                <span>{callingCode}</span>
+              <div className="country__intro__info__description">
+                <div
+                  className="blog-post-content"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
               </div>
-              <div className="flag flag--uk"></div>
-              <div
-                className="blog-post-content"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
             </div>
           </div>
         </div>
@@ -94,7 +103,8 @@ export const query = graphql`
             name
             imageUrl
             capitalName
-            currency
+            currencySymbol
+            currencyCode
             callingCode
           }
         }
