@@ -2,7 +2,7 @@
     position: relative;
     height: 320px;
     width: 100%;
-    background: url(../data/images/accommodation-hero.png) center/cover no-repeat;
+    background: url(../assets/images/accommodation-hero.png) center/cover no-repeat;
 
     &__claim{
         position: absolute;
@@ -29,6 +29,66 @@
             color: #FFF;
             font-family: IntervalNextBook,sans-serif;
             text-shadow: 0 1px 1px #363636;
+        }
+    }
+}
+
+.uniplaces-full-container {
+    background-color: #FFF;
+    width: 100%;
+}
+
+.uniplaces-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-border-bottom {
+    border-bottom: 1px solid #b2b9c2;
+}
+
+.accommodation-countries {
+    position: relative;
+    color: #888;
+    margin-bottom: 100px;
+}
+
+.country {
+    &__title {
+        margin-bottom: 37px;
+        color: #005A7E;
+        font-size: 2.5rem;
+        line-height: normal;
+        margin-right: 5px;
+
+        span {
+            font-family: IntervalNextBookit,sans-serif;
+        }
+    }
+
+    &__row--intro{
+        margin-bottom: 50px;
+        height: auto;
+        position: relative;
+        clear: both;
+        display: block;
+        width: 100%;
+
+        .row__block {
+            height: 320px;
+            width: 48%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            &__info {
+                margin-right: 0;
+                margin-bottom: 0;
+                width: 48%;
+            }
         }
     }
 }
