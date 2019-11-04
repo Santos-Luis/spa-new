@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 
 const CountrySection = (props) => {
   const {
@@ -9,8 +10,8 @@ const CountrySection = (props) => {
       currencySymbol,
       currencyCode,
       callingCode,
-      flagPath,
-      html
+      html,
+      countryFlag
     }
   } = props;
 
@@ -39,8 +40,8 @@ const CountrySection = (props) => {
               </div>
             </div>
             <div className="country__intro__info__attributes__right-block">
-              <img src={flagPath} /> 
-            </div>
+              <Img fluid={countryFlag.childImageSharp.fluid} />
+            </div>    
           </div>
           <div className="country__intro__info__description">
             <div

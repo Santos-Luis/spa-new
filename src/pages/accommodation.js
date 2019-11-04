@@ -6,7 +6,6 @@ import CountrySection from "../components/countrySection"
 import './accommodation.scss'
 
 const IndexPage = ({ data }) => {
-  console.log(data);
   const createTable = () => {
     let table = [];
     const { allMarkdownRemark: { edges } } = data;
@@ -15,11 +14,13 @@ const IndexPage = ({ data }) => {
       const { 
         node: {
           html,
-          frontmatter
+          frontmatter,
         }
       } = edge;
+      const { countryCode } = frontmatter;
+      const countryFlag = data[`${countryCode}Flag`];
       
-      const countrySectionData = { html, ...frontmatter };
+      const countrySectionData = { html, countryFlag, ...frontmatter };
 
       table.push(
         <CountrySection data={countrySectionData} />
@@ -75,42 +76,42 @@ export const query = graphql`
     },
     deFlag: file(relativePath: { eq: "flags/de.png" }) {
       childImageSharp {
-        fluid(maxWidth: 20) {
+        fluid(maxWidth: 40) {
           ...GatsbyImageSharpFluid
         }
       }
     },
     esFlag: file(relativePath: { eq: "flags/es.png" }) {
       childImageSharp {
-        fluid(maxWidth: 20) {
+        fluid(maxWidth: 40) {
           ...GatsbyImageSharpFluid
         }
       }
     },
     frFlag: file(relativePath: { eq: "flags/fr.png" }) {
       childImageSharp {
-        fluid(maxWidth: 20) {
+        fluid(maxWidth: 40) {
           ...GatsbyImageSharpFluid
         }
       }
     },
     gbFlag: file(relativePath: { eq: "flags/gb.png" }) {
       childImageSharp {
-        fluid(maxWidth: 20) {
+        fluid(maxWidth: 40) {
           ...GatsbyImageSharpFluid
         }
       }
     },
     itFlag: file(relativePath: { eq: "flags/it.png" }) {
       childImageSharp {
-        fluid(maxWidth: 20) {
+        fluid(maxWidth: 40) {
           ...GatsbyImageSharpFluid
         }
       }
     },
     ptFlag: file(relativePath: { eq: "flags/pt.png" }) {
       childImageSharp {
-        fluid(maxWidth: 20) {
+        fluid(maxWidth: 40) {
           ...GatsbyImageSharpFluid
         }
       }
