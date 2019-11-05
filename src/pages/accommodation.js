@@ -1,14 +1,16 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CountrySection from "../components/countrySection"
+import CitiesSection from "../components/citiesSection"
 
 import './accommodation.scss'
 
 const IndexPage = ({ data }) => {
   const createTable = () => {
-    let table = [];
-    const { allMarkdownRemark: { edges } } = data;
+    const table = [];
+    const { countries: { edges } } = data;
 
     for (const edge of edges) {
       const { 
@@ -17,13 +19,19 @@ const IndexPage = ({ data }) => {
           frontmatter,
         }
       } = edge;
-      const { countryCode } = frontmatter;
-      const countryFlag = data[`${countryCode}Flag`];
+      const { name } = frontmatter;
       
-      const countrySectionData = { html, countryFlag, ...frontmatter };
+      const countrySectionData = { html, ...frontmatter };
 
       table.push(
-        <CountrySection data={countrySectionData} />
+        <div className="country full-border-bottom">
+          <h1 className="country__title">
+            <span>Hello </span>
+            {name}
+          </h1>
+          <CountrySection data={countrySectionData} />
+          <CitiesSection />
+        </div>
       )
     }
 
@@ -48,75 +56,54 @@ const IndexPage = ({ data }) => {
             </section>
           </div>
         </div>
-      
 
       </div>
     </Layout>
   );
 }
 
-export const query = graphql`
+export const fluidImage = graphql`
+  fragment fluidFlagsImage on File {
+    childImageSharp {
+      fluid(maxWidth: 40) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  },
+  fragment fluidCountriesImage on File {
+    childImageSharp {
+      fluid(maxWidth: 600) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
+
+export const countriesQuery = graphql`
   query {
-    allMarkdownRemark {
+    countries: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex : "\/markdown-pages\/countries/"} }
+    ) {
       edges {
         node {
-          id
           html
           frontmatter {
-            countryCode
             name
-            imageUrl
             capitalName
             currencySymbol
             currencyCode
             callingCode
+            countryImage {
+              ...fluidCountriesImage
+            }
+            flagImage {
+              ...fluidFlagsImage
+            }
           }
-        }
-      }
-    },
-    deFlag: file(relativePath: { eq: "flags/de.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 40) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    esFlag: file(relativePath: { eq: "flags/es.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 40) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    frFlag: file(relativePath: { eq: "flags/fr.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 40) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    gbFlag: file(relativePath: { eq: "flags/gb.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 40) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    itFlag: file(relativePath: { eq: "flags/it.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 40) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    ptFlag: file(relativePath: { eq: "flags/pt.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 40) {
-          ...GatsbyImageSharpFluid
         }
       }
     }
   }
-`
+`;
 
 export default IndexPage
