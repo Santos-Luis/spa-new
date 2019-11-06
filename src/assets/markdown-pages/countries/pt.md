@@ -1,4 +1,5 @@
 ---
+countryCode: pt
 name: Portugal
 capitalName: Lisbon
 currencySymbol: €

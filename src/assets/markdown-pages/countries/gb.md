@@ -1,4 +1,5 @@
 ---
+countryCode: gb
 name: United Kingdom
 capitalName: London
 currencySymbol: £

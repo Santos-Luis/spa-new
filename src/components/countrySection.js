@@ -17,7 +17,11 @@ const CountrySection = (props) => {
   return (
     <div className="country__intro">
       <div className="country__intro__image">
-        <Img imgStyle={{ objectFit: 'fill'  }} style={{ height: '100%', width: '100%'}} fluid={countryImage.childImageSharp.fluid} />
+        <Img 
+          imgStyle={{ objectFit: 'fill' }}
+          style={{ height: '100%', width: '100%'}}
+          fluid={countryImage.childImageSharp.fluid}
+        />
       </div>
       <div className="country__intro__info">
         <div className="country__intro__info__attributes">
