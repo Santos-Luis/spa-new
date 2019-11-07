@@ -2,8 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CountrySection from "../components/countrySection"
-import CitiesSection from "../components/citiesSection"
+import CountrySection from "../components/countriesPage/countrySection"
+import CitiesSection from "../components/countriesPage/citiesSection"
 
 import './accommodation.scss'
 
@@ -72,37 +72,10 @@ const IndexPage = ({
   );
 }
 
-export const fluidImage = graphql`
-  fragment flagsImageFrag on File {
-    publicURL
-    childImageSharp {
-      sizes(maxWidth: 30) {
-        srcSet
-      }
-    }
-  },
-  fragment countriesImageFrag on File {
-    publicURL
-    childImageSharp {
-      sizes(maxWidth: 700) {
-        srcSet
-      }
-    }
-  },
-  fragment citiesImageFrag on File {
-    publicURL
-    childImageSharp {
-      sizes(maxWidth: 400) {
-        srcSet
-      }
-    }
-  }
-`;
-
 export const countriesQuery = graphql`
   query {
     countries: allMarkdownRemark(
-      filter: { fileAbsolutePath: {regex : "\/markdown-pages\/countries/"} }
+      filter: { fileAbsolutePath: {regex : "\/markdown-pages\/countriesPage\/countries/"} }
     ) {
       edges {
         node {
@@ -115,10 +88,20 @@ export const countriesQuery = graphql`
             currencyCode
             callingCode
             countryImage {
-              ...countriesImageFrag
+              publicURL
+              childImageSharp {
+                sizes(maxWidth: 700) {
+                  srcSet
+                }
+              }
             }
             flagImage {
-              ...flagsImageFrag
+              publicURL
+              childImageSharp {
+                sizes(maxWidth: 30) {
+                  srcSet
+                }
+              }
             }
           }
 
@@ -126,7 +109,7 @@ export const countriesQuery = graphql`
       }
     },
     cities: allMarkdownRemark(
-      filter: { fileAbsolutePath: {regex : "\/markdown-pages\/cities/"} }
+      filter: { fileAbsolutePath: {regex : "\/markdown-pages\/countriesPage\/cities/"} }
     ) {
       edges {
         node {
@@ -135,7 +118,12 @@ export const countriesQuery = graphql`
             name
             slug
             image {
-              ...citiesImageFrag
+              publicURL
+              childImageSharp {
+                sizes(maxWidth: 400) {
+                  srcSet
+                }
+              }
             }
           }
         }

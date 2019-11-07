@@ -2,6 +2,7 @@
   position: relative;
   height: 320px;
   width: 100%;
+  margin-bottom: 50px;
   background: url(../assets/images/accommodation-hero.png) center/cover no-repeat;
 
   &__claim{
@@ -122,6 +123,7 @@
 
       &__description{
         color: #575757;
+        line-height: 21px;
       }
     }
   }
