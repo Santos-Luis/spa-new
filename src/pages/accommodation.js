@@ -7,21 +7,31 @@ import CitiesSection from "../components/citiesSection"
 
 import './accommodation.scss'
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ 
+  data: { 
+    countries: { edges: countryEdges }, 
+    cities : { edges: cityEdges }
+  } 
+}) => {
   const createTable = () => {
     const table = [];
-    const { countries: { edges } } = data;
 
-    for (const edge of edges) {
+    for (const countryEdge of countryEdges) {
       const { 
         node: {
           html,
-          frontmatter,
+          frontmatter: countryFrontmatter,
         }
-      } = edge;
-      const { name } = frontmatter;
+      } = countryEdge;
+      const { countryCode, name } = countryFrontmatter;
       
-      const countrySectionData = { html, ...frontmatter };
+      const countrySectionData = { html, ...countryFrontmatter };
+      const citySectionData = cityEdges.filter(
+        function({ node: { frontmatter: { countryCode } } }) {
+          return this === countryCode;
+        },
+        countryCode
+      );
 
       table.push(
         <div className="country full-border-bottom">
@@ -30,7 +40,7 @@ const IndexPage = ({ data }) => {
             {name}
           </h1>
           <CountrySection data={countrySectionData} />
-          <CitiesSection />
+          <CitiesSection data={citySectionData}/>
         </div>
       )
     }
@@ -72,7 +82,14 @@ export const fluidImage = graphql`
   },
   fragment fluidCountriesImage on File {
     childImageSharp {
-      fluid(maxWidth: 600) {
+      fluid(maxWidth: 700) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  },
+  fragment fluidCitiesImage on File {
+    childImageSharp {
+      fluid(maxWidth: 400) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -88,6 +105,7 @@ export const countriesQuery = graphql`
         node {
           html
           frontmatter {
+            countryCode
             name
             capitalName
             currencySymbol
@@ -98,6 +116,23 @@ export const countriesQuery = graphql`
             }
             flagImage {
               ...fluidFlagsImage
+            }
+          }
+
+        }
+      }
+    },
+    cities: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex : "\/markdown-pages\/cities/"} }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            countryCode
+            name
+            slug
+            image {
+              ...fluidCitiesImage
             }
           }
         }
