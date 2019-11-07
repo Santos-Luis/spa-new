@@ -1,6 +1,6 @@
 ---
 countryCode: es
-name: Valencia
-slug: valencia
-image: ../../../images/cities/es/valencia.jpg
+name: Barcelona
+slug: barcelona
+image: ../../../images/cities/es/barcelona.jpg
 ---

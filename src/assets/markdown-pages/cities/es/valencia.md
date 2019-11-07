@@ -1,6 +1,6 @@
 ---
 countryCode: es
-name: Madrid
-slug: madrid
-image: ../../../images/cities/es/madrid.jpg
+name: Valencia
+slug: valencia
+image: ../../../images/cities/es/valencia.jpg
 ---

@@ -6,6 +6,7 @@ const CitiesSection = ({ data: cityNodes }) => {
     const table = [];
 
     for (const cityNode of cityNodes) {
+      console.log(cityNode);
       const { 
         node: { 
           frontmatter: {
