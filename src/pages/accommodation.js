@@ -132,7 +132,12 @@ export const countriesQuery = graphql`
             name
             slug
             image {
-              ...fluidCitiesImage
+              publicURL
+              childImageSharp {
+                sizes(maxWidth: 700 ) {
+                  srcSet
+                }
+              }
             }
           }
         }

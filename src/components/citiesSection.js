@@ -6,7 +6,6 @@ const CitiesSection = ({ data: cityNodes }) => {
     const table = [];
 
     for (const cityNode of cityNodes) {
-      console.log(cityNode);
       const { 
         node: { 
           frontmatter: {
@@ -24,7 +23,7 @@ const CitiesSection = ({ data: cityNodes }) => {
             <Img 
               imgStyle={{ objectFit: 'fill' }} 
               style={{ height: '100%', width: '100%' }} 
-              fluid={image.childImageSharp.fluid}
+              sizes={image.childImageSharp.sizes}
             />
             <h4> {name} </h4>
           </a>
