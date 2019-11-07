@@ -2,15 +2,18 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CountrySection from "../components/countriesPage/countrySection"
-import CitiesSection from "../components/countriesPage/citiesSection"
+import HeroImage from "../components/countriesPage/HeroImage/heroImage"
+import CountrySection from "../components/countriesPage/CountrySection/countrySection"
+import CitySection from "../components/countriesPage/CitySection/citySection"
+import FooterSection from "../components/countriesPage/FooterSection/footerSection"
 
 import './accommodation.scss'
 
 const IndexPage = ({ 
   data: { 
     countries: { edges: countryEdges }, 
-    cities : { edges: cityEdges }
+    cities: { edges: cityEdges },
+    footers: { edges: footerEdges }
   } 
 }) => {
   const createTable = () => {
@@ -23,7 +26,7 @@ const IndexPage = ({
           frontmatter: countryFrontmatter,
         }
       } = countryEdge;
-      const { countryCode, name } = countryFrontmatter;
+      const { countryCode, name: countryName } = countryFrontmatter;
       
       const countrySectionData = { html, ...countryFrontmatter };
       const citySectionData = cityEdges.filter(
@@ -32,15 +35,23 @@ const IndexPage = ({
         },
         countryCode
       );
+      const footerSectionForCountry = footerEdges.filter(
+        function({ node: { frontmatter: { countryCode } } }) {
+          return this === countryCode;
+        },
+        countryCode
+      );
+      const footerSectionData = { ...footerSectionForCountry[0], countryName };
 
       table.push(
-        <div className="country full-border-bottom">
+        <div className="country full-border-bottom" key={countryName}>
           <h1 className="country__title">
             <span>Hello </span>
-            {name}
+            {countryName}
           </h1>
           <CountrySection data={countrySectionData} />
-          <CitiesSection data={citySectionData}/>
+          <CitySection data={citySectionData}/>
+          <FooterSection data={footerSectionData} />
         </div>
       )
     }
@@ -52,13 +63,7 @@ const IndexPage = ({
     <Layout>
       <SEO title="Home" />
       <div className="page-wrapper">
-        <div className="hero">
-          <div className="hero__claim">
-            <h1 className="hero__claim__heading"> The world we are in. </h1>
-            <h2 className="hero__claim__subheading"> Discover it. Book it. </h2>
-          </div>
-        </div>
-
+        <HeroImage />
         <div className="uniplaces-full-container">
           <div className="uniplaces-container">
             <section className="accommodation-countries">
@@ -125,6 +130,19 @@ export const countriesQuery = graphql`
                 }
               }
             }
+          }
+        }
+      }
+    },
+    footers: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex : "\/markdown-pages\/countriesPage\/footers/"} }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            countryCode
+            countrySlug
           }
         }
       }

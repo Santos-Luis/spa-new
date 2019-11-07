@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  height: 320px;
+  width: 100%;
+  margin-bottom: 50px;
+  background: url(../../../assets/images/accommodation-hero.png) center/cover no-repeat;
+
+  &__claim{
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    top: 35%;
+    text-align: center;
+    z-index: 1;
+
+    &__heading {
+      font-family: IntervalNextSemiBold,sans-serif;
+      font-size: 2.5rem;
+      color: #FFF;
+      margin-bottom: 30px;
+      text-align: center;
+      line-height: 3rem;
+      text-shadow: 0 1px 1px #363636;
+    }
+
+    &__subheading {
+      font-size: 2rem;
+      line-height: 36px;
+      color: #FFF;
+      font-family: IntervalNextBook,sans-serif;
+      text-shadow: 0 1px 1px #363636;
+    }
+  }
+}
