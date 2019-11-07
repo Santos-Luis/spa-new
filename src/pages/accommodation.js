@@ -73,24 +73,27 @@ const IndexPage = ({
 }
 
 export const fluidImage = graphql`
-  fragment fluidFlagsImage on File {
+  fragment flagsImageFrag on File {
+    publicURL
     childImageSharp {
-      fluid(maxWidth: 40) {
-        ...GatsbyImageSharpFluid
+      sizes(maxWidth: 30 ) {
+        srcSet
       }
     }
   },
-  fragment fluidCountriesImage on File {
+  fragment countriesImageFrag on File {
+    publicURL
     childImageSharp {
-      fluid(maxWidth: 700) {
-        ...GatsbyImageSharpFluid
+      sizes(maxWidth: 700 ) {
+        srcSet
       }
     }
   },
-  fragment fluidCitiesImage on File {
+  fragment citiesImageFrag on File {
+    publicURL
     childImageSharp {
-      fluid(maxWidth: 400) {
-        ...GatsbyImageSharpFluid
+      sizes(maxWidth: 400 ) {
+        srcSet
       }
     }
   }
@@ -112,10 +115,10 @@ export const countriesQuery = graphql`
             currencyCode
             callingCode
             countryImage {
-              ...fluidCountriesImage
+              ...countriesImageFrag
             }
             flagImage {
-              ...fluidFlagsImage
+              ...flagsImageFrag
             }
           }
 
@@ -132,12 +135,7 @@ export const countriesQuery = graphql`
             name
             slug
             image {
-              publicURL
-              childImageSharp {
-                sizes(maxWidth: 700 ) {
-                  srcSet
-                }
-              }
+              ...citiesImageFrag
             }
           }
         }
