@@ -76,7 +76,7 @@ export const fluidImage = graphql`
   fragment flagsImageFrag on File {
     publicURL
     childImageSharp {
-      sizes(maxWidth: 30 ) {
+      sizes(maxWidth: 30) {
         srcSet
       }
     }
@@ -84,7 +84,7 @@ export const fluidImage = graphql`
   fragment countriesImageFrag on File {
     publicURL
     childImageSharp {
-      sizes(maxWidth: 700 ) {
+      sizes(maxWidth: 700) {
         srcSet
       }
     }
@@ -92,7 +92,7 @@ export const fluidImage = graphql`
   fragment citiesImageFrag on File {
     publicURL
     childImageSharp {
-      sizes(maxWidth: 400 ) {
+      sizes(maxWidth: 400) {
         srcSet
       }
     }
