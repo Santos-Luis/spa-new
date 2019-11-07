@@ -1,5 +1,6 @@
-import React from "react"
-import Img from "gatsby-image"
+import React from "react";
+import Img from "gatsby-image";
+import styles from "./countrySection.module.scss";
 
 const CountrySection = (props) => {
   const {
@@ -15,29 +16,29 @@ const CountrySection = (props) => {
   } = props;
 
   return (
-    <div className="country__intro">
-      <div className="country__intro__image">
+    <div className={styles.intro} key={capitalName}>
+      <div className={styles.intro__image}>
         <Img 
           imgStyle={{ objectFit: 'fill' }}
           style={{ height: '100%', width: '100%'}}
           sizes={countryImage.childImageSharp.sizes}
         />
       </div>
-      <div className="country__intro__info">
-        <div className="country__intro__info__attributes">
-          <div className="country__intro__info__attributes__left-block">
-            <div className="country__intro__info__attributes__left-block__key">
+      <div className={styles.intro__info}>
+        <div className={styles.intro__info__attributes}>
+          <div className={styles.intro__info__attributes__leftBlock}>
+            <div className={styles.intro__info__attributes__leftBlock__key}>
               <p>Capital city </p>
               <p>Currency </p>
               <p>Calling code </p>
             </div>
-            <div className="country__intro__info__attributes__left-block__value">
+            <div className={styles.intro__info__attributes__leftBlock__value}>
               <p>{capitalName}</p>
               <p>{currencySymbol} <span>({currencyCode})</span></p>
               <p>{callingCode}</p>
             </div>
           </div>
-          <div className="country__intro__info__attributes__right-block">
+          <div className={styles.intro__info__attributes__rightBlock}>
             <Img
               imgStyle={{ objectFit: 'fill' }}
               style={{ height: '100%', width: '100%'}} 
@@ -45,12 +46,10 @@ const CountrySection = (props) => {
             />
           </div>    
         </div>
-        <div className="country__intro__info__description">
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
+        <div 
+          className={styles.intro__info__description}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
     </div>
   );

@@ -1,0 +1,62 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  &__image {
+    height: 320px;
+    width: 48%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    font-size: 0.85em;
+
+    &__attributes{ 
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      &__left-block {
+        display: flex;
+
+        p {
+          margin-bottom: 0;
+        }
+
+        span {
+          color: #A7A7AB;
+          font-size: .8rem;
+        }
+
+        &__key {
+          margin-right: 30px;
+          color: #A7A7AB;
+        }
+
+        &__value {
+          color: #667485;
+        }
+      }
+
+      &__right-block {
+        height: 20px;
+        width: 30px;
+      }
+    }
+
+    &__description{
+      color: #575757;
+      line-height: 21px;
+
+      a {
+        font-family: IntervalNextReg,sans-serif;
+        color: #00ADEF;  
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}

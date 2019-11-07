@@ -1,0 +1,4 @@
+---
+countryCode: de
+countrySlug: germany
+---

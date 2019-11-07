@@ -1,0 +1,4 @@
+---
+countryCode: fr
+countrySlug: france
+---
