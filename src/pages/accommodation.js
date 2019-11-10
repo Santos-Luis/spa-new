@@ -1,11 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HeroImage from "../components/countriesPage/HeroImage/heroImage"
-import CountrySection from "../components/countriesPage/CountrySection/countrySection"
-import CitySection from "../components/countriesPage/CitySection/citySection"
-import FooterSection from "../components/countriesPage/FooterSection/footerSection"
+import React from "react";
+import { graphql } from "gatsby";
+import CitySection from "../components/countriesPage/CitySection/citySection";
+import CountrySection from "../components/countriesPage/CountrySection/countrySection";
+import FooterSection from "../components/countriesPage/FooterSection/footerSection";
+import HeroImage from "../components/countriesPage/HeroImage/heroImage";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import UniBreadcrumb from "../components/UniBreadcrumb/uniBreadcrumb";
 
 import './accommodation.scss'
 
@@ -14,7 +15,10 @@ const IndexPage = ({
     countries: { edges: countryEdges }, 
     cities: { edges: cityEdges },
     footers: { edges: footerEdges }
-  } 
+  },
+  pageContext: {
+    breadcrumb: { crumbs },
+  },
 }) => {
   const createTable = () => {
     const table = [];
@@ -61,9 +65,10 @@ const IndexPage = ({
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Accommodation" />
       <div className="page-wrapper">
         <HeroImage />
+        <UniBreadcrumb label="Apartments for rent: Rooms and Student Accommodation - Uniplaces" crumbs={crumbs} />
         <div className="uniplaces-full-container">
           <div className="uniplaces-container">
             <section className="accommodation-countries">
