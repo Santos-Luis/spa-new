@@ -1,20 +1,24 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HeroImage from "../components/countriesPage/HeroImage/heroImage"
-import CountrySection from "../components/countriesPage/CountrySection/countrySection"
-import CitySection from "../components/countriesPage/CitySection/citySection"
-import FooterSection from "../components/countriesPage/FooterSection/footerSection"
-
-import './accommodation.scss'
+import React from "react";
+import { graphql } from "gatsby";
+import CitySection from "../components/countriesPage/CitySection/citySection";
+import CountrySection from "../components/countriesPage/CountrySection/countrySection";
+import CountryWrapper from "../components/countriesPage/CountryWapper/countryWrapper";
+import FooterSection from "../components/countriesPage/FooterSection/footerSection";
+import HeroImage from "../components/countriesPage/HeroImage/heroImage";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import UniBreadcrumb from "../components/UniBreadcrumb/uniBreadcrumb";
+import UniplacesFullContainer from "../components/UniplacesFullContainer/uniplacesFullContainer";
 
 const IndexPage = ({ 
   data: { 
     countries: { edges: countryEdges }, 
     cities: { edges: cityEdges },
     footers: { edges: footerEdges }
-  } 
+  },
+  pageContext: {
+    breadcrumb: { crumbs },
+  },
 }) => {
   const createTable = () => {
     const table = [];
@@ -44,16 +48,14 @@ const IndexPage = ({
       const footerSectionData = { ...footerSectionForCountry[0], countryName };
 
       table.push(
-        <div className="country full-border-bottom" key={countryName}>
-          <h1 className="country__title">
-            <span>Hello </span>
-            {countryName}
-          </h1>
-          <CountrySection data={countrySectionData} />
-          <CitySection data={citySectionData}/>
-          <FooterSection data={footerSectionData} />
-        </div>
-      )
+        <CountryWrapper key={countryName} countryName={countryName} children={(
+          <React.Fragment>
+            <CountrySection data={countrySectionData} />
+            <CitySection data={citySectionData}/>
+            <FooterSection data={footerSectionData} />
+          </React.Fragment>
+        )} />
+      );
     }
 
     return table;
@@ -61,18 +63,14 @@ const IndexPage = ({
 
   return (
     <Layout>
-      <SEO title="Home" />
-      <div className="page-wrapper">
-        <HeroImage />
-        <div className="uniplaces-full-container">
-          <div className="uniplaces-container">
-            <section className="accommodation-countries">
-              {createTable()}
-            </section>
-          </div>
-        </div>
-
-      </div>
+      <SEO title="Accommodation" />
+      <HeroImage />
+      <UniplacesFullContainer children={(
+        <React.Fragment>
+          <UniBreadcrumb label="Apartments for rent: Rooms and Student Accommodation - Uniplaces" crumbs={crumbs} />
+          {createTable()}
+        </React.Fragment>
+      )} />
     </Layout>
   );
 }
@@ -97,6 +95,9 @@ export const countriesQuery = graphql`
               childImageSharp {
                 sizes(maxWidth: 700) {
                   srcSet
+                  src
+                  sizes
+                  aspectRatio
                 }
               }
             }
@@ -105,6 +106,9 @@ export const countriesQuery = graphql`
               childImageSharp {
                 sizes(maxWidth: 30) {
                   srcSet
+                  src
+                  sizes
+                  aspectRatio
                 }
               }
             }
@@ -127,6 +131,9 @@ export const countriesQuery = graphql`
               childImageSharp {
                 sizes(maxWidth: 400) {
                   srcSet
+                  src
+                  sizes
+                  aspectRatio
                 }
               }
             }

@@ -1,13 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import Image from "../components/image";
+import SEO from "../components/seo";
+import UniBreadcrumb from "../components/UniBreadcrumb/uniBreadcrumb";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const IndexPage = () => (
+const IndexPage = ({
+  pageContext: {
+    breadcrumb: { crumbs },
+  },
+}) => (
   <Layout>
     <SEO title="Home" />
+    <UniBreadcrumb label="Home" crumbs={crumbs} />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
@@ -15,7 +20,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
-    <Link to="/accommodation/">Go to page accommodation</Link>
+    <Link to="/accommodation">Go to page accommodation</Link>
   </Layout>
 )
 
