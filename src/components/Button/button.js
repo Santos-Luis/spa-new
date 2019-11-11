@@ -1,11 +1,10 @@
 import React from "react";
+import { Link } from "gatsby"
 import styles from "./button.module.scss";
 
 const Button = ({ href, text }) => {
   return(
-    <a href={href} className={styles.button}>
-      {text}
-    </a>
+    <Link to={href} className={styles.button}> {text} </Link>
   )
 }
 
