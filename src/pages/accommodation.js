@@ -93,16 +93,22 @@ export const countriesQuery = graphql`
             countryImage {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 700) {
+                sizes(maxWidth: 700) {
                   srcSet
+                  src
+                  sizes
+                  aspectRatio
                 }
               }
             }
             flagImage {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 30) {
+                sizes(maxWidth: 30) {
                   srcSet
+                  src
+                  sizes
+                  aspectRatio
                 }
               }
             }
@@ -123,8 +129,11 @@ export const countriesQuery = graphql`
             image {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 400) {
+                sizes(maxWidth: 400) {
                   srcSet
+                  src
+                  sizes
+                  aspectRatio
                 }
               }
             }
