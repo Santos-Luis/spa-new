@@ -2,13 +2,13 @@ import React from "react";
 import { graphql } from "gatsby";
 import CitySection from "../components/countriesPage/CitySection/citySection";
 import CountrySection from "../components/countriesPage/CountrySection/countrySection";
+import CountryWrapper from "../components/countriesPage/CountryWapper/countryWrapper";
 import FooterSection from "../components/countriesPage/FooterSection/footerSection";
 import HeroImage from "../components/countriesPage/HeroImage/heroImage";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import UniBreadcrumb from "../components/UniBreadcrumb/uniBreadcrumb";
-
-import './accommodation.scss'
+import UniplacesFullContainer from "../components/UniplacesFullContainer/uniplacesFullContainer";
 
 const IndexPage = ({ 
   data: { 
@@ -48,16 +48,14 @@ const IndexPage = ({
       const footerSectionData = { ...footerSectionForCountry[0], countryName };
 
       table.push(
-        <div className="country full-border-bottom" key={countryName}>
-          <h1 className="country__title">
-            <span>Hello </span>
-            {countryName}
-          </h1>
-          <CountrySection data={countrySectionData} />
-          <CitySection data={citySectionData}/>
-          <FooterSection data={footerSectionData} />
-        </div>
-      )
+        <CountryWrapper key={countryName} countryName={countryName} children={(
+          <React.Fragment>
+            <CountrySection data={countrySectionData} />
+            <CitySection data={citySectionData}/>
+            <FooterSection data={footerSectionData} />
+          </React.Fragment>
+        )} />
+      );
     }
 
     return table;
@@ -66,18 +64,13 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title="Accommodation" />
-      <div className="page-wrapper">
-        <HeroImage />
-        <UniBreadcrumb label="Apartments for rent: Rooms and Student Accommodation - Uniplaces" crumbs={crumbs} />
-        <div className="uniplaces-full-container">
-          <div className="uniplaces-container">
-            <section className="accommodation-countries">
-              {createTable()}
-            </section>
-          </div>
-        </div>
-
-      </div>
+      <HeroImage />
+      <UniplacesFullContainer children={(
+        <React.Fragment>
+          <UniBreadcrumb label="Apartments for rent: Rooms and Student Accommodation - Uniplaces" crumbs={crumbs} />
+          {createTable()}
+        </React.Fragment>
+      )} />
     </Layout>
   );
 }
@@ -100,7 +93,7 @@ export const countriesQuery = graphql`
             countryImage {
               publicURL
               childImageSharp {
-                sizes(maxWidth: 700) {
+                fluid(maxWidth: 700) {
                   srcSet
                 }
               }
@@ -108,7 +101,7 @@ export const countriesQuery = graphql`
             flagImage {
               publicURL
               childImageSharp {
-                sizes(maxWidth: 30) {
+                fluid(maxWidth: 30) {
                   srcSet
                 }
               }
@@ -130,7 +123,7 @@ export const countriesQuery = graphql`
             image {
               publicURL
               childImageSharp {
-                sizes(maxWidth: 400) {
+                fluid(maxWidth: 400) {
                   srcSet
                 }
               }

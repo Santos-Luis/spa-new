@@ -24,7 +24,7 @@ const CitiesSection = ({ data: cityNodes }) => {
             <Img 
               imgStyle={{ objectFit: 'fill' }} 
               style={{ height: '100%', width: '100%' }} 
-              sizes={image.childImageSharp.sizes}
+              sizes={image.childImageSharp.fluid}
             />
             <h4> {name} </h4>
           </a>
