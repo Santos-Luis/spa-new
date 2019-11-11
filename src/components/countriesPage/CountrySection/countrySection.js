@@ -21,7 +21,7 @@ const CountrySection = (props) => {
         <Img 
           imgStyle={{ objectFit: 'fill' }}
           style={{ height: '100%', width: '100%'}}
-          sizes={{...countryImage.childImageSharp.sizes, aspectRatio: 4/3}}
+          sizes={countryImage.childImageSharp.sizes}
         />
       </div>
       <div className={styles.intro__info}>
