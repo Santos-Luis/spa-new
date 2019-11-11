@@ -5,7 +5,9 @@ const UniplacesFullContainer = ({ children }) => {
   return (
     <div className={styles.uniplacesFullContainer}>
       <div className={styles.uniplacesContainer}>
-        {children}
+        <section className={styles.accommodationCountries}>
+          {children}
+        </section>
       </div>
     </div>
   );
