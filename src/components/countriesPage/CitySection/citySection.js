@@ -17,10 +17,11 @@ const CitiesSection = ({ data: cityNodes }) => {
         }
       } = cityNode;
       const title = `Accommodation in ${name}`;
+      const href = `accommodation/${slug}`;
 
       table.push(
         <li key={slug}>
-          <a href={slug} title={title}>
+          <a href={href} title={title}>
             <Img 
               imgStyle={{ objectFit: 'fill' }} 
               style={{ height: '100%', width: '100%' }} 

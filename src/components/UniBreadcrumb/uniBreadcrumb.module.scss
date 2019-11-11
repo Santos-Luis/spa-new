@@ -1,3 +1,14 @@
 .uni-breadcrumb {
   margin-bottom: 40px;
+
+  span {
+    color: #A7A7AB !important;
+    font-size: .75rem;
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
 }

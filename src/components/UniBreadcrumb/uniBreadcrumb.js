@@ -9,11 +9,10 @@ const UniBreadcrumb = ({ label, crumbs }) => {
         crumbs={crumbs}
         title="You are at: "
         crumbSeparator=" / "
-        crumbStyle={{ color: "#A7A7AB", fontSize: "0.75rem" }}
-        crumbActiveStyle={{ color: "#00ADEF", cursor: "pointer" }}
+        crumbStyle={{ color: "#00ADEF", fontSize: "0.75rem" }}
+        crumbActiveStyle={{ color: "#A7A7AB", fontSize: "0.75rem" }}
         crumbLabel={label}
-        disableLinks={[]}
-        hiddenCrumbs={[]}
+        disableLinks={[crumbs[crumbs.length - 1].pathname]}
       />
     </div>
   );
