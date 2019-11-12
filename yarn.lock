@@ -5384,6 +5384,14 @@ gatsby-plugin-breadcrumb@^6.2.0:
     "@babel/runtime" "^7.3.4"
     prop-types "^15.7.2"
 
+gatsby-plugin-catch-links@^2.1.16:
+  version "2.1.16"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-2.1.16.tgz#8e05c9b609353c39d8e7e6b38e678c4833c2237b"
+  integrity sha512-yaEMj1U1y+11XNwgF0aFEaz7NQiT51S8UTIrIhRUEs5SMJcNv4XSC6mkKw+cWOMFwjIiBdhotxOJHOlVaxhNVg==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+    escape-string-regexp "^1.0.5"
+
 gatsby-plugin-manifest@^2.2.25:
   version "2.2.26"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.26.tgz#040a7dc2ab54e64cc97481adfb498e5dc8caade4"
