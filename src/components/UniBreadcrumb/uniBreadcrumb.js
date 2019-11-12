@@ -13,7 +13,6 @@ const UniBreadcrumb = ({ label, crumbs }) => {
         crumbActiveStyle={{ color: "#A7A7AB", fontSize: "0.75rem" }}
         crumbLabel={label}
         disableLinks={[crumbs[crumbs.length - 1].pathname]}
-
       />
     </div>
   );
