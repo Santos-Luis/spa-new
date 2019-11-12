@@ -1,4 +1,5 @@
 ---
+index: 5
 countryCode: fr
 name: France
 capitalName: Paris

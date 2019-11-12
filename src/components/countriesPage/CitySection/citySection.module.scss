@@ -11,6 +11,12 @@
     height: 270px;
     width: 32%;
     position: relative;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
     
     &:nth-of-type(3n+2) {
       margin: 0 2% 2% 2%;
@@ -21,10 +27,6 @@
       color: #00ADEF;
       font-size: 1rem;
       cursor: pointer;
-
-      img:hover {
-        filter: blur(2px);
-      }
     }
   }
 

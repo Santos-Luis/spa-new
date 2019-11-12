@@ -1,4 +1,5 @@
 ---
+index: 3
 countryCode: es
 name: Spain
 capitalName: Madrid
