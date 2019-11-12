@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import { Link } from "gatsby";
 import styles from "./citySection.module.scss";
 
 const CitiesSection = ({ data: cityNodes }) => {
@@ -17,18 +18,18 @@ const CitiesSection = ({ data: cityNodes }) => {
         }
       } = cityNode;
       const title = `Accommodation in ${name}`;
-      const href = `accommodation/${slug}`;
+      const href = `/accommodation/${slug}`;
 
       table.push(
         <li key={slug}>
-          <a href={href} title={title}>
+          <Link to={href} title={title}>
             <Img 
               imgStyle={{ objectFit: 'fill' }} 
               style={{ height: '100%', width: '100%' }} 
               sizes={image.childImageSharp.sizes}
             />
             <h4> {name} </h4>
-          </a>
+          </Link>
         </li>
       );
     }

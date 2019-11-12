@@ -5,7 +5,7 @@ import styles from "./footerSection.module.scss";
 const footersSection = ({ data: { countryName, node } }) => {
   const { html, frontmatter: { countrySlug } } = node;
   const text = `More about ${countryName}`;
-  const href = `accommodation/${countrySlug}`;
+  const href = `/accommodation/${countrySlug}`;
 
   return html
     ? (
