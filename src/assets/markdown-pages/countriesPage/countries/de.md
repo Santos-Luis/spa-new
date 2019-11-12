@@ -1,4 +1,5 @@
 ---
+index: 6
 countryCode: de
 name: Germany
 capitalName: Berlin

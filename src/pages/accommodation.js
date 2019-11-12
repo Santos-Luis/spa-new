@@ -78,6 +78,7 @@ const IndexPage = ({
 export const countriesQuery = graphql`
   query {
     countries: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___index] }
       filter: { fileAbsolutePath: {regex : "\/markdown-pages\/countriesPage\/countries/"} }
     ) {
       edges {
@@ -113,11 +114,11 @@ export const countriesQuery = graphql`
               }
             }
           }
-
         }
       }
     },
     cities: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___name] }
       filter: { fileAbsolutePath: {regex : "\/markdown-pages\/countriesPage\/cities/"} }
     ) {
       edges {

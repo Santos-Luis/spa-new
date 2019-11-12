@@ -1,4 +1,5 @@
 ---
+index: 1
 countryCode: gb
 name: United Kingdom
 capitalName: London
