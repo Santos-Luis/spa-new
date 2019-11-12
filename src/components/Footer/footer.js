@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import styles from "./footer.module.scss";
 import FacebookIcon from "../../assets/images/social/facebook.svg";
 import TwitterIcon from "../../assets/images/social/twitter.svg";
@@ -13,10 +14,10 @@ const Footer = () => {
         <div className={styles.footer__main}>
           <div className={styles.footer__main__column} key="uniplaces">
             <h3> Uniplaces </h3>
-            <a href="/about-us">About Us</a>
+            <Link to="/about-us">About Us</Link>
             <a href="http://blog.uniplaces.com">Blog</a>
             <a href="http://careers.uniplaces.com">Careers</a>
-            <a href="/partners">Partners</a>
+            <Link to="/partners">Partners</Link>
             <a href="http://affiliates.uniplaces.com/">Become an Affiliate</a>
           </div>
           <div className={styles.footer__main__column} key="join-us">
@@ -27,29 +28,29 @@ const Footer = () => {
           </div>
           <div className={styles.footer__main__column} key="help-centre">
             <h3> Help Centre </h3>
-            <a id="howItWorks" href="https://find.uniplaces.com/how-it-works/" data-event="how-it-works-click">How it works</a>
+            <a href="https://find.uniplaces.com/how-it-works/" data-event="how-it-works-click">How it works</a>
             <a href="https://help.uniplaces.com/help/s">Help Centre</a>
-            <a id="contactUs" href="https://help.uniplaces.com/help/s/contactsupport">Contact Us</a>
+            <a href="https://help.uniplaces.com/help/s/contactsupport">Contact Us</a>
           </div>
         </div>
         <div className={styles.footer__cities}>
           <span>Top Cities</span>
-          <a href="/accommodation/lisbon" title="Lisbon">Lisbon</a>
-          <a href="/accommodation/porto" title="Porto">Porto</a>
-          <a href="/accommodation/madrid" title="Madrid">Madrid</a>
-          <a href="/accommodation/barcelona" title="Barcelona">Barcelona</a>
-          <a href="/accommodation/valencia" title="Valencia">Valencia</a>
-          <a href="/accommodation/milan" title="Milan">Milan</a>
-          <a href="/accommodation/rome" title="Rome">Rome</a>
-          <a href="/accommodation/london" title="London">London</a>
-          <a href="/accommodation/munich" title="Munich">Munich</a>
-          <a href="/accommodation/berlin" title="Berlin">Berlin</a>
+          <Link to="/accommodation/lisbon" title="Lisbon">Lisbon</Link>
+          <Link to="/accommodation/porto" title="Porto">Porto</Link>
+          <Link to="/accommodation/madrid" title="Madrid">Madrid</Link>
+          <Link to="/accommodation/barcelona" title="Barcelona">Barcelona</Link>
+          <Link to="/accommodation/valencia" title="Valencia">Valencia</Link>
+          <Link to="/accommodation/milan" title="Milan">Milan</Link>
+          <Link to="/accommodation/rome" title="Rome">Rome</Link>
+          <Link to="/accommodation/london" title="London">London</Link>
+          <Link to="/accommodation/munich" title="Munich">Munich</Link>
+          <Link to="/accommodation/berlin" title="Berlin">Berlin</Link>
         </div>
         <div className={styles.footer__social}>
           <div className={styles.footer__social__terms}>
-            <a href="/terms">Terms</a>
-            <a href="/terms#privacy-policy">Privacy</a>
-            <a href="/sitemap">Site Map</a>
+            <Link to="/terms">Terms</Link>
+            <Link to="/terms#privacy-policy">Privacy</Link>
+            <Link to="/sitemap">Site Map</Link>
             <span>© Uniplaces, 2019</span>
           </div>
           <div className={styles.footer__social__icons}>
