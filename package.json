@@ -28,6 +28,11 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@loadable/babel-plugin": "^5.10.3",
+    "@loadable/component": "^5.10.3",
+    "@loadable/webpack-plugin": "^5.7.1",
+    "babel-preset-gatsby": "^0.2.21",
     "prettier": "^1.18.2"
   },
   "keywords": [

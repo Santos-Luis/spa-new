@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-
+import loadable from '@loadable/component'
 import Header from "./Header/header";
-import Footer from "./Footer/footer";
 import "./layout.css";
 
 const Layout = ({ children }) => {
@@ -16,6 +15,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const Footer = loadable(() => import('./Footer/footer'));
 
   return (
     <div id="top-of-page">

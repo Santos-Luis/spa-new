@@ -1,14 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import CitySection from "../../components/countriesPage/CitySection/citySection";
-import Controls from "../../components/Controls/controls";
-import CountrySection from "../../components/countriesPage/CountrySection/countrySection";
+import loadable from '@loadable/component'
 import CountryWrapper from "../../components/countriesPage/CountryWapper/countryWrapper";
-import FooterSection from "../../components/countriesPage/FooterSection/footerSection";
-import HeroImage from "../../components/countriesPage/HeroImage/heroImage";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import UniBreadcrumb from "../../components/UniBreadcrumb/uniBreadcrumb";
 import UniplacesFullContainer from "../../components/UniplacesFullContainer/uniplacesFullContainer";
 
 const IndexPage = ({ 
@@ -48,6 +43,10 @@ const IndexPage = ({
       );
       const footerSectionData = { ...footerSectionForCountry[0], countryName };
 
+      const CitySection = loadable(() => import('../../components/countriesPage/CitySection/citySection'));
+      const CountrySection = loadable(() => import('../../components/countriesPage/CountrySection/countrySection'));
+      const FooterSection = loadable(() => import('../../components/countriesPage/FooterSection/footerSection'));;
+
       table.push(
         <CountryWrapper key={countryName} countryName={countryName} children={(
           <React.Fragment>
@@ -61,6 +60,10 @@ const IndexPage = ({
 
     return table;
   }
+
+  const Controls = loadable(() => import('../../components/Controls/controls'));
+  const HeroImage = loadable(() => import('../../components/countriesPage/HeroImage/heroImage'));
+  const UniBreadcrumb = loadable(() => import('../../components/UniBreadcrumb/uniBreadcrumb'));
 
   return (
     <Layout>
