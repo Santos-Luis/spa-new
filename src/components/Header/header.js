@@ -6,7 +6,7 @@ import UniplacesLogo from "../../assets/images/svgs/uniplaces-logo.svg";
 const Header = () => {
   return(
     <header className={styles.header}>
-      <Link to="/" className={styles.header__elements} key="logo">
+      <Link to="/" className={styles.header__elements} key="logo" aria-label="Homepage">
         <UniplacesLogo />
       </Link>
       <ul>

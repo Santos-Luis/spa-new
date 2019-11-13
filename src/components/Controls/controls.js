@@ -8,10 +8,14 @@ import UniplacesIcon from "../../assets/images/svgs/uniplaces-icon.svg";
 const Controls = () => {
   return (
     <div className={styles.controls}>
-      <Link to="/" className={styles.controls__button}>
+      <Link to="/" className={styles.controls__button} aria-label="Homepage">
         <UniplacesIcon />
       </Link>
-      <button className={styles.controls__button} onClick={ () => { scrollTo('#top-of-page') } }>
+      <button
+        aria-label="Scroll to top"
+        className={styles.controls__button}
+        onClick={ () => { scrollTo('#top-of-page') } }
+      >
         <ArrowUp />
       </button>
     </div>
