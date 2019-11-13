@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styles from "./header.module.scss";
-import UniplacesLogo from "../../assets/images/uniplaces-logo.svg";
+import UniplacesLogo from "../../assets/images/svgs/uniplaces-logo.svg";
 
 const Header = () => {
   return(

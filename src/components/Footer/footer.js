@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 import styles from "./footer.module.scss";
-import FacebookIcon from "../../assets/images/social/facebook.svg";
-import TwitterIcon from "../../assets/images/social/twitter.svg";
-import InstagramIcon from "../../assets/images/social/instagram.svg";
-import LinkedinIcon from "../../assets/images/social/linkedin.svg";
-import YoutubeIcon from "../../assets/images/social/youtube.svg";
+import FacebookIcon from "../../assets/images/svgs/social/facebook.svg";
+import TwitterIcon from "../../assets/images/svgs/social/twitter.svg";
+import InstagramIcon from "../../assets/images/svgs/social/instagram.svg";
+import LinkedinIcon from "../../assets/images/svgs/social/linkedin.svg";
+import YoutubeIcon from "../../assets/images/svgs/social/youtube.svg";
 
 const Footer = () => {
   return(

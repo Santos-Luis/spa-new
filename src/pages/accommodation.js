@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import CitySection from "../components/countriesPage/CitySection/citySection";
+import Controls from "../components/Controls/controls";
 import CountrySection from "../components/countriesPage/CountrySection/countrySection";
 import CountryWrapper from "../components/countriesPage/CountryWapper/countryWrapper";
 import FooterSection from "../components/countriesPage/FooterSection/footerSection";
@@ -51,7 +52,7 @@ const IndexPage = ({
         <CountryWrapper key={countryName} countryName={countryName} children={(
           <React.Fragment>
             <CountrySection data={countrySectionData} />
-            <CitySection data={citySectionData}/>
+            <CitySection data={citySectionData} />
             <FooterSection data={footerSectionData} />
           </React.Fragment>
         )} />
@@ -69,6 +70,7 @@ const IndexPage = ({
         <React.Fragment>
           <UniBreadcrumb label="Apartments for rent: Rooms and Student Accommodation - Uniplaces" crumbs={crumbs} />
           {createTable()}
+          <Controls />
         </React.Fragment>
       )} />
     </Layout>
