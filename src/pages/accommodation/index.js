@@ -95,14 +95,14 @@ export const countriesQuery = graphql`
             callingCode
             countryImage {
               childImageSharp {
-                fluid(maxWidth: 576) {
+                fluid(maxWidth: 576, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             flagImage {
               childImageSharp {
-                fluid(maxWidth: 30) {
+                fluid(maxWidth: 30, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -123,7 +123,7 @@ export const countriesQuery = graphql`
             slug
             image {
               childImageSharp {
-                fluid(maxWidth: 384) {
+                fluid(maxWidth: 384, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
