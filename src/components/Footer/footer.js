@@ -54,19 +54,44 @@ const Footer = () => {
             <span>© Uniplaces, 2019</span>
           </div>
           <div className={styles.footer__social__icons}>
-            <a href="https://www.facebook.com/uniplaces" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/uniplaces"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FacebookIcon style={{fill: "#fff", fillOpacity: "1"}} />
             </a>
-            <a href="https://twitter.com/uniplaces" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/uniplaces"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <TwitterIcon style={{fill: "#fff", fillOpacity: "1"}} />
             </a>
-            <a href="https://instagram.com/uniplaces/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com/uniplaces/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <InstagramIcon style={{fill: "#fff", fillOpacity: "1"}} />
             </a>
-            <a href="https://www.linkedin.com/company/uniplaces" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/uniplaces"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin"
+            >
               <LinkedinIcon style={{fill: "#fff", fillOpacity: "1"}} />
             </a>
-            <a href="https://www.youtube.com/user/uniplacesvideos" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.youtube.com/user/uniplacesvideos"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Youtube"
+            >
               <YoutubeIcon style={{fill: "#fff", fillOpacity: "1"}} />
             </a>
           </div>
