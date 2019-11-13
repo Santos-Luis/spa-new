@@ -94,24 +94,16 @@ export const countriesQuery = graphql`
             currencyCode
             callingCode
             countryImage {
-              publicURL
               childImageSharp {
-                sizes(maxWidth: 580) {
-                  srcSet
-                  src
-                  sizes
-                  aspectRatio
+                fluid(maxWidth: 576) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
             flagImage {
-              publicURL
               childImageSharp {
-                sizes(maxWidth: 30) {
-                  srcSet
-                  src
-                  sizes
-                  aspectRatio
+                fluid(maxWidth: 30) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -130,13 +122,9 @@ export const countriesQuery = graphql`
             name
             slug
             image {
-              publicURL
               childImageSharp {
-                sizes(maxWidth: 400) {
-                  srcSet
-                  src
-                  sizes
-                  aspectRatio
+                fluid(maxWidth: 384) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
