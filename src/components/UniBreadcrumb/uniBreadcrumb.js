@@ -1,6 +1,6 @@
 import React from "react";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";
-import styles from "./unibreadcrumb.module.scss";
+import styles from "./uniBreadcrumb.module.scss";
 
 const UniBreadcrumb = ({ label, crumbs }) => {
   return(
