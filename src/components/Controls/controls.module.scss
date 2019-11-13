@@ -1,0 +1,25 @@
+.controls {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    width: 16px;
+    height: 21px;
+    fill: #00ADEF;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #00ADEF;
+    border-radius: 45px;
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 40px;
+    }
+  }
+}

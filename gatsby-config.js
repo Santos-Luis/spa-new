@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `uniplaces-accommodation-pages`,
+        short_name: `uniplaces`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -59,6 +59,7 @@ module.exports = {
     },
     `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-smoothscroll`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
