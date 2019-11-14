@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import styles from "./citySection.module.scss";
 
 const CitiesSection = ({ data: cityNodes }) => {
-  const list = cityNodes.map( ({ node: { frontmatter: { name, slug, image } } }) => (
+  const list = cityNodes.map(({ node: { frontmatter: { name, slug, image } } }) => (
     <li key={slug}>
       <Link to={`/accommodation/${slug}`} title={`Accommodation in ${name}`}>
         <Img 

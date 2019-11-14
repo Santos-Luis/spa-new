@@ -38,13 +38,13 @@ const IndexPage = ({
     const footerSectionData = { ...footerSectionForCountry[0], countryName };
 
     return (
-      <CountryWrapper key={countryName} countryName={countryName} children={(
+      <CountryWrapper key={countryName} countryName={countryName}>
         <React.Fragment>
           <CountrySection data={countrySectionData} />
           <CitySection data={citySectionData} />
           <FooterSection data={footerSectionData} />
         </React.Fragment>
-      )} />
+      </CountryWrapper>
     );
   });
 
@@ -52,13 +52,13 @@ const IndexPage = ({
     <Layout>
       <SEO title="Accommodation" />
       <HeroImage />
-      <UniplacesFullContainer children={(
+      <UniplacesFullContainer>
         <React.Fragment>
           <UniBreadcrumb label="Apartments for rent: Rooms and Student Accommodation - Uniplaces" crumbs={crumbs} />
           {list}
           <Controls />
         </React.Fragment>
-      )} />
+      </UniplacesFullContainer>
     </Layout>
   );
 }
