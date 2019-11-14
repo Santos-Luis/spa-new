@@ -35,7 +35,6 @@ const IndexPage = ({
         return footerEdgeCountryCode === countryCode
       }
     );
-    console.log(footerSectionForCountry);
     const footerSectionData = { ...footerSectionForCountry[0], countryName };
 
     return (
