@@ -21,46 +21,33 @@ const IndexPage = ({
     breadcrumb: { crumbs },
   },
 }) => {
-  const createTable = () => {
-    const table = [];
+  const list = countryEdges.map( ({ node: { html, frontmatter: countryFrontmatter } }) => {
+    const { countryCode, name: countryName } = countryFrontmatter;
+    const countrySectionData = { html, ...countryFrontmatter };
 
-    for (const countryEdge of countryEdges) {
-      const { 
-        node: {
-          html,
-          frontmatter: countryFrontmatter,
-        }
-      } = countryEdge;
-      const { countryCode, name: countryName } = countryFrontmatter;
-      
-      const countrySectionData = { html, ...countryFrontmatter };
-      const citySectionData = cityEdges.filter(
-        function({ node: { frontmatter: { countryCode } } }) {
-          return this === countryCode;
-        },
-        countryCode
-      );
-      const footerSectionForCountry = footerEdges.filter(
-        function({ node: { frontmatter: { countryCode } } }) {
-          return this === countryCode;
-        },
-        countryCode
-      );
-      const footerSectionData = { ...footerSectionForCountry[0], countryName };
+    const citySectionData = cityEdges.filter(
+      ({ node: { frontmatter: { countryCode: cityCountryCode } } }) => {
+        return cityCountryCode === countryCode
+      }
+    );
+    const footerSectionForCountry = footerEdges.filter(
+      ({ node: { frontmatter: { countryCode: footerEdgeCountryCode } } }) => {
+        return footerEdgeCountryCode === countryCode
+      }
+    );
+    console.log(footerSectionForCountry);
+    const footerSectionData = { ...footerSectionForCountry[0], countryName };
 
-      table.push(
-        <CountryWrapper key={countryName} countryName={countryName} children={(
-          <React.Fragment>
-            <CountrySection data={countrySectionData} />
-            <CitySection data={citySectionData} />
-            <FooterSection data={footerSectionData} />
-          </React.Fragment>
-        )} />
-      );
-    }
-
-    return table;
-  }
+    return (
+      <CountryWrapper key={countryName} countryName={countryName} children={(
+        <React.Fragment>
+          <CountrySection data={countrySectionData} />
+          <CitySection data={citySectionData} />
+          <FooterSection data={footerSectionData} />
+        </React.Fragment>
+      )} />
+    );
+  });
 
   return (
     <Layout>
@@ -69,7 +56,7 @@ const IndexPage = ({
       <UniplacesFullContainer children={(
         <React.Fragment>
           <UniBreadcrumb label="Apartments for rent: Rooms and Student Accommodation - Uniplaces" crumbs={crumbs} />
-          {createTable()}
+          {list}
           <Controls />
         </React.Fragment>
       )} />

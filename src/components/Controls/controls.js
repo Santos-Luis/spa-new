@@ -18,6 +18,6 @@ const Controls = () => (
       <ArrowUp />
     </button>
   </div>
-)
+);
 
 export default Controls;

@@ -4,42 +4,22 @@ import { Link } from "gatsby";
 import styles from "./citySection.module.scss";
 
 const CitiesSection = ({ data: cityNodes }) => {
-  const createTable = () => {
-    const table = [];
-
-    for (const cityNode of cityNodes) {
-      const {
-        node: {
-          frontmatter: {
-            name,
-            slug,
-            image
-          } 
-        }
-      } = cityNode;
-      const title = `Accommodation in ${name}`;
-      const href = `/accommodation/${slug}`;
-
-      table.push(
-        <li key={slug}>
-          <Link to={href} title={title}>
-            <Img 
-              imgStyle={{ objectFit: 'fill' }} 
-              style={{ height: '100%', width: '100%' }} 
-              fluid={image.childImageSharp.fluid}
-            />
-            <h4> {name} </h4>
-          </Link>
-        </li>
-      );
-    }
-
-    return table;
-  }
+  const list = cityNodes.map( ({ node: { frontmatter: { name, slug, image } } }) => (
+    <li key={slug}>
+      <Link to={`/accommodation/${slug}`} title={`Accommodation in ${name}`}>
+        <Img 
+          imgStyle={{ objectFit: 'fill' }} 
+          style={{ height: '100%', width: '100%' }} 
+          fluid={image.childImageSharp.fluid}
+        />
+        <h4> {name} </h4>
+      </Link>
+    </li>
+  ));
 
   return (
     <ul className={styles.citiesSection}>
-      {createTable()}
+      {list}
     </ul>
   );
 }

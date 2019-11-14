@@ -7,6 +7,19 @@ import InstagramIcon from "@assets/images/svgs/social/instagram.svg";
 import LinkedinIcon from "@assets/images/svgs/social/linkedin.svg";
 import YoutubeIcon from "@assets/images/svgs/social/youtube.svg";
 
+const topCities = [
+  { slug: 'lisbon', cityName: 'Lisbon' },
+  { slug: 'porto', cityName: 'Porto' },
+  { slug: 'madrid', cityName: 'Madrid' },
+  { slug: 'barcelona', cityName: 'Barcelona' },
+  { slug: 'valencia', cityName: 'Valencia' },
+  { slug: 'milan', cityName: 'Milan' },
+  { slug: 'rome', cityName: 'Rome' },
+  { slug: 'london', cityName: 'London' },
+  { slug: 'munich', cityName: 'Munich' },
+  { slug: 'berlin', cityName: 'Berlin' }
+];
+
 const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.footer__wrapper}>
@@ -34,23 +47,20 @@ const Footer = () => (
       </div>
       <div className={styles.footer__cities}>
         <span>Top Cities</span>
-        <Link to="/accommodation/lisbon" title="Lisbon">Lisbon</Link>
-        <Link to="/accommodation/porto" title="Porto">Porto</Link>
-        <Link to="/accommodation/madrid" title="Madrid">Madrid</Link>
-        <Link to="/accommodation/barcelona" title="Barcelona">Barcelona</Link>
-        <Link to="/accommodation/valencia" title="Valencia">Valencia</Link>
-        <Link to="/accommodation/milan" title="Milan">Milan</Link>
-        <Link to="/accommodation/rome" title="Rome">Rome</Link>
-        <Link to="/accommodation/london" title="London">London</Link>
-        <Link to="/accommodation/munich" title="Munich">Munich</Link>
-        <Link to="/accommodation/berlin" title="Berlin">Berlin</Link>
+        {
+          topCities.map(
+            ({ slug, cityName }) => (
+              <Link to={ `/accommodation/${slug}` } title={cityName}>{cityName}</Link>
+            )
+          )
+        }
       </div>
       <div className={styles.footer__social}>
         <div className={styles.footer__social__terms}>
           <Link to="/terms">Terms</Link>
           <Link to="/terms#privacy-policy">Privacy</Link>
           <Link to="/sitemap">Site Map</Link>
-          <span>© Uniplaces, 2019</span>
+          <span>© Uniplaces, { new Date().getFullYear() }</span>
         </div>
         <div className={styles.footer__social__icons}>
           <a
@@ -97,6 +107,6 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-)
+);
 
 export default Footer;
