@@ -19,6 +19,13 @@ const topCities = [
   { slug: 'munich', cityName: 'Munich' },
   { slug: 'berlin', cityName: 'Berlin' }
 ];
+const socialIcons = [
+  { herf: 'https://www.facebook.com/uniplaces', label: 'Facebook', component: FacebookIcon },
+  { herf: 'https://twitter.com/uniplaces', label: 'Twitter', component: TwitterIcon },
+  { herf: 'https://instagram.com/uniplaces/', label: 'Instagram', component: InstagramIcon },
+  { herf: 'https://www.linkedin.com/company/uniplaces', label: 'Linkedin', component: LinkedinIcon },
+  { herf: 'https://www.youtube.com/user/uniplacesvideos', label: 'Youtube', component: YoutubeIcon }
+];
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -48,8 +55,7 @@ const Footer = () => (
       <div className={styles.footer__cities}>
         <span>Top Cities</span>
         {
-          topCities.map(
-            ({ slug, cityName }) => (
+          topCities.map(({ slug, cityName }) => (
               <Link to={ `/accommodation/${slug}` } title={cityName}>{cityName}</Link>
             )
           )
@@ -63,46 +69,17 @@ const Footer = () => (
           <span>© Uniplaces, { new Date().getFullYear() }</span>
         </div>
         <div className={styles.footer__social__icons}>
-          <a
-            href="https://www.facebook.com/uniplaces"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            <FacebookIcon style={{fill: "#fff", fillOpacity: "1"}} />
-          </a>
-          <a
-            href="https://twitter.com/uniplaces"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            <TwitterIcon style={{fill: "#fff", fillOpacity: "1"}} />
-          </a>
-          <a
-            href="https://instagram.com/uniplaces/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <InstagramIcon style={{fill: "#fff", fillOpacity: "1"}} />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/uniplaces"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Linkedin"
-          >
-            <LinkedinIcon style={{fill: "#fff", fillOpacity: "1"}} />
-          </a>
-          <a
-            href="https://www.youtube.com/user/uniplacesvideos"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Youtube"
-          >
-            <YoutubeIcon style={{fill: "#fff", fillOpacity: "1"}} />
-          </a>
+          {
+            socialIcons.map(({ href, label, component }) => (
+              <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+                {React.createElement(
+                  component,
+                  { style: {fill: "#fff", fillOpacity: "1"} },
+                  null
+                )}
+              </a>
+            ))
+          }
         </div>
       </div>
     </div>
