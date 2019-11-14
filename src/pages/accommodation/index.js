@@ -1,17 +1,17 @@
 import React from "react";
 import { graphql } from "gatsby";
-import CitySection from "../../components/countriesPage/CitySection/citySection";
-import Controls from "../../components/Controls/controls";
-import CountrySection from "../../components/countriesPage/CountrySection/countrySection";
-import CountryWrapper from "../../components/countriesPage/CountryWapper/countryWrapper";
-import FooterSection from "../../components/countriesPage/FooterSection/footerSection";
-import HeroImage from "../../components/countriesPage/HeroImage/heroImage";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import UniBreadcrumb from "../../components/UniBreadcrumb/uniBreadcrumb";
-import UniplacesFullContainer from "../../components/UniplacesFullContainer/uniplacesFullContainer";
+import CitySection from "@components/countriesPage/CitySection/citySection";
+import Controls from "@components/Controls/controls";
+import CountrySection from "@components/countriesPage/CountrySection/countrySection";
+import CountryWrapper from "@components/countriesPage/CountryWapper/countryWrapper";
+import FooterSection from "@components/countriesPage/FooterSection/footerSection";
+import HeroImage from "@components/countriesPage/HeroImage/heroImage";
+import Layout from "@components/layout";
+import SEO from "@components/seo";
+import UniBreadcrumb from "@components/UniBreadcrumb/uniBreadcrumb";
+import UniplacesFullContainer from "@components/UniplacesFullContainer/uniplacesFullContainer";
 
-const IndexPage = ({ 
+const IndexPage = ({
   data: { 
     countries: { edges: countryEdges }, 
     cities: { edges: cityEdges },

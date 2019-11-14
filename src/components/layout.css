@@ -3,11 +3,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
 h1 {
   margin-top: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -17,6 +19,7 @@ h1 {
   font-size: 2.25rem;
   line-height: 1.1;
 }
+
 h4 {
   margin-top: 0;
   padding-bottom: 0;
@@ -27,6 +30,7 @@ h4 {
   font-size: 1rem;
   line-height: 1.1;
 }
+
 ul {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -39,6 +43,7 @@ ul {
   list-style-position: outside;
   list-style-image: none;
 }
+
 p {
   margin-left: 0;
   margin-right: 0;
@@ -49,6 +54,7 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 * {
   box-sizing: inherit;
 }

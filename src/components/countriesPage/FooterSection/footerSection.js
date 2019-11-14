@@ -1,26 +1,27 @@
 import React from "react";
-import Button from "../../Button/button"
+import Button from "@components/Button/button"
 import styles from "./footerSection.module.scss";
 
 const footersSection = ({ data: { countryName, node } }) => {
   const { html, frontmatter: { countrySlug } } = node;
-  const text = `More about ${countryName}`;
-  const href = `/accommodation/${countrySlug}`;
 
-  return html
-    ? (
-      <div className={styles.footer}>
-        <div 
-          className={styles.footer__description}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-        <Button href={href} text={text}/>
-      </div>
-    ) : (
+  if (!html) {
+    return (
       <div className={styles.footerWithoutDescription}>
-        <Button href={href} text={text}/>
+        <Button href={ `/accommodation/${countrySlug}` } text={ `More about ${countryName}` }/>
       </div>
-    )
+    );
+  }
+
+  return (
+    <div className={styles.footer}>
+      <div 
+        className={styles.footer__description}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+      <Button href={ `/accommodation/${countrySlug}` } text={ `More about ${countryName}` }/>
+    </div>
+  );
 }
 
 export default footersSection;
